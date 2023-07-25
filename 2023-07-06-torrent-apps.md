@@ -64,3 +64,8 @@ image:
 - [GitHub](https://github.com/aria2/aria2) 30.9k Stars
 - 다양한 플랫폼 (Windows, macOS, Linux 등) 지원
 - 명령어 기반으로 UI를 제공하지 않음
+
+이제 토렌트 클라이언트를 받았으면, [토렌트 바로가기](/torrent) 에서 사이트로
+들어가 필요한 파일들을 다운로드 받아보자 
+
+
