@@ -110,7 +110,7 @@ In [12]: add1(2)
 Out[12]: 3
 ```
 
-아래와 같이 `functtools` 패키지를 사용할 수 있다.
+아래와 같이 `functools` 패키지를 사용할 수 있다.
 
 ```python
 In [14]: import functools
@@ -348,7 +348,7 @@ In [194]: functional_style('abcde123A')
 Out[194]: True
 ```
 
-마약 여기에 특수문자 기능을 추가해야하는 상황이 오면 어떨까?
+만약 여기에 특수문자 기능을 추가해야하는 상황이 오면 어떨까?
 imperative_style 에서는 기존 코드에 변수를 추가하고, 조건문을 추가하는
 등 뜯어 고치는 형태로 진행되지만, functional_style 에서는 기본
 함수들을 추가하고, 재조합을 하는 형태로 진행된다.
