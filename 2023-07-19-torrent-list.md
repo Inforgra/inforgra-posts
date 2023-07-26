@@ -10,6 +10,8 @@ image:
 토렌트 바로가기의 목록을 정리한다. 추가/수정/삭제 등의 행동이 있을
 때마다, 기록을 남기기 위한 공간으로 활용할 예정이다.
 
+## 2020-07-03 변경사항
+
 - [토렌트봇](/torrent/torrentbot)
 - [토렌트좋다](/torrent/torrentzota)
 - [토렌트팁](/torrent/torrenttip)
