@@ -4,7 +4,7 @@ description: 명령형 언어인 Python 은 `lambda`를 통하여 함수형 스�
 author: Kukjin Kang
 date: 2023-07-25
 tags: ["Python", "함수형스타일", "lambda", "currying"]
-image:
+image: https://i.ibb.co/YWyd0kd/sc-Kg-Yp-SX5a-5t-Ucbou-ITy-Ka-Gx8-Z7-Ho7-t-EM31-Bv-Btazl1-Zk8-Xit-DKic-Q4-6-P7-KK18l-LAk8e-ep-NGM2-N.webp
 ---
 
 함수형 언어(functional language)는 명령형 언어(imperative language)와
@@ -355,5 +355,7 @@ imperative_style 에서는 기존 코드에 변수를 추가하고, 조건문을
 
 ## 참고
 
+다음 글은 한번 가볍게 읽어 볼 만하다.
+
+- [함수형언어](https://namu.wiki/w/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4#s-4.5.3.1)
 - [functools](https://docs.python.org/3/library/functools.html)
-- [함수형 프로그래밍이란](https://jongminfire.dev/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%B4%EB%9E%80)
