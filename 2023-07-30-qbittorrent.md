@@ -62,7 +62,7 @@ image: https://i.ibb.co/BzGzzMz/qbittorrent-8.png
 생각이 있다면 다른 디스크나 경로를 지정합니다. 별도의 디스크(ex: D:\\)가 있다면
 따로 지정해서 사용하는 것이 좋습니다.
 
-![settings](https://i.ibb.co/G7WZdJc/settings-1.png)
+<img src="https://i.ibb.co/G7WZdJc/settings-1.png" width="100%" />
 
 ### 속도 제한 설정
 
@@ -70,20 +70,22 @@ image: https://i.ibb.co/BzGzzMz/qbittorrent-8.png
 동시에 진행합니다. 만약 업로드에서 대역폭을 많이 쓰면 다운로드가 느려질 수 있습니다.
 업로드와 다운로드의 속도는 각각 지정할 수 있으며, 올려주기(업로드)의 값은 작을 수록 좋습니다.
 
-![settings](https://i.ibb.co/vXy7wtQ/settings-2.png)
+<img src="https://i.ibb.co/vXy7wtQ/settings-2.png" width="100%" />
 
 ### 배포 제한 설정
 
 배포 제한 설정을 하지 않으면, 토렌트가 관리 목록에 존재하는 한 항상 업로드를 하게 됩니다.
 따라서 비율 또는 시간을 맞추게 되면 토렌트 파일을 제거하는 것으로 합니다.
 
-![settings](https://i.ibb.co/zhjGdcQ/settings-3.png)
+![settings]()
+<img src="https://i.ibb.co/zhjGdcQ/settings-3.png" width="100%" />
 
 ### 로그 설정
 
 개발자가 아닌 이상 로그를 살펴볼 일은 없습니다. 별도로 로그를 남기지 않도록 체크를 해제합니다.
 
-![settings](https://i.ibb.co/KX4WvKV/settings-4.png)
+![settings]()
+<img src="https://i.ibb.co/KX4WvKV/settings-4.png" width="100%" />
 
 ## 사용방법
 
@@ -92,11 +94,11 @@ image: https://i.ibb.co/BzGzzMz/qbittorrent-8.png
 
 ### .torrent 파일 추가하기
 
-![.torrent](https://i.ibb.co/3WS4Fys/usage-1.png)
+<img src="https://i.ibb.co/3WS4Fys/usage-1.png" width="100%" />
 
 ### magenet 경로 추가하기
 
-![magnet](https://i.ibb.co/3Yj1NVJ/usage-2.png)
+<img src="https://i.ibb.co/3Yj1NVJ/usage-2.png" width="100%" >
 
 ## 참고
 
