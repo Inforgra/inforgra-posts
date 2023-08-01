@@ -13,6 +13,7 @@ image:
 ## 2023-08-01 변경사항
 
 - [모두툰](/webtoon/modutoon)
+- [마나툰](/webtoon/manatoon)
 
 ## 2023-07-23 변경사항
 
