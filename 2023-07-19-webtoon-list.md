@@ -10,6 +10,17 @@ image:
 웹툰 바로가기의 목록을 정리한다. 추가/수정/삭제 등의 행동이 있을
 때마다, 기록을 남기기 위한 공간으로 활용할 예정이다.
 
+## 2023-08-01 변경사항
+
+- [모두툰](/webtoon/modutoon)
+
+## 2023-07-23 변경사항
+
+- [호두코믹스시즌2](/webtoon/hodu2)
+- [스마일만화](/webtoon/smilemanga)
+- [툰컴](/webtoon/tooncome)
+- [에스툰](/webtoon/stoon)
+
 ## 2023-07-19 변경사항
 
 - [블랙툰](/webtoon/blacktoon)
@@ -37,9 +48,3 @@ image:
 - [뉴토끼시즌2](/webtoon/newtoki2)
 - [W툰](/webtoon/wtoon)
 
-## 2023-07-23 변경사항
-
-- [호두코믹스시즌2](/webtoon/hodu2)
-- [스마일만화](/webtoon/smilemanga)
-- [툰컴](/webtoon/tooncome)
-- [에스툰](/webtoon/stoon)
