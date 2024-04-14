@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: SSH 키를 생성하고, ssh-agent 에서 사용하기
 summary: SSH 프로토콜은 SSH 키를 사용합니다. 새로운 SSH 키를 생성하고, ssh-agent 에 추가하는 방법을 알아보겠습니다.
 date: 2024-04-09
@@ -7,6 +7,7 @@ image: ssh-agent.png
 imageAlt: ssh
 tags: 
   - ssh
+  - ssh-keygen
   - ssh-agent
 ---
 
@@ -102,7 +103,7 @@ SSH 키는 생성할 때 암호를 추가하여, 키를 더욱 안전하게 보�
 
 하나의 키를 여러개의 원격서비스에 사용하는 1:N  경우는 1:1 방식을 여러번 사용하는 것으로 대체할 수 있습니다. 1:1, N:1  방법만 이해하면 모든 경우에서 적용할 수 있습니다.
 
-###  하나의 키를 하나의 원격 서비스에 사용하기 (1:1)
+### 하나의 키를 하나의 원격 서비스에 사용하기 (1:1)
 
 두개의 키 `id_rsa-a`, `id_rsa-b` 가 있고, 두개의 원격 서비스 `a.com` `b.com` 가 있습니다. 각각의 키를 서비스에 적용하기 위한 설정은 다음과 같습니다.
 
@@ -116,7 +117,7 @@ User username-b
 IdentityFile ~/.ssh/id_rsa-b
 ```
 
-###  여러개의 키를 하나의 원격 서비스에 사용하기 (N:1)
+### 여러개의 키를 하나의 원격 서비스에 사용하기 (N:1)
 
 두개의 키 `id_rsa-a`, `id_rsa-b` 를 하나의 원격 서비스 `a.com` 이 있습니다. 같은 HostName 을 가지기 때문에 1:1 설정 방법을 적용할 수 없습니다.
 
@@ -134,24 +135,6 @@ IdentityFile ~/.ssh/id_rsa-b
 ```
  
 ## ssh-agent 실행하기
-
-=== Mac
-
-  MacOS 는 필요에 따라 `ssh-agent` 를 실행합니다. 
-
-=== Windows
-
-  관리자 권한으로 `powershell` 을 실행하고 다음 명령을 입력합니다
-  
-  ```bash
-  Get-Service -Name ssh-agent | Set-Service -StartupType Manual
-  Start-Serviec ssh-agent
-  ```
-  
-  StartupType 이 "Manual" 인 경우 시스템 부팅시 매번 서비스를 시작하는 명령을 입력해야합니다. "Automatic" 으로 변경하면 부팅시에 자동으로 서비스를 시작합니다.
-  
-
-=== Linux
 
   실행 방법을 알아보기 전에, 동작 방식에 대해 살펴보겠습니다.
 
@@ -188,18 +171,35 @@ IdentityFile ~/.ssh/id_rsa-b
   $ kill -9 $SSH_AGENT_PID
   ```
 
-   ssh-agent 환경 변수를 이용하면 로그인시에 프로세스의 실행여부를 확인할 수 있습니다. 만약 프로세스가 존재하지 않는다면, 새로운 프로세스를 실행합니다. 
+=== Mac
 
+  MacOS 는 필요에 따라 `ssh-agent` 를 실행하기 때문에 별도의 명령을 실행하지 않아도 됩니다.
+
+=== Windows
+
+  관리자 권한으로 `powershell` 을 실행하고 다음 명령을 입력합니다
+  
   ```bash
+  Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+  Start-Serviec ssh-agent
+  ```
+  
+  StartupType 이 "Manual" 인 경우 시스템 부팅시 매번 서비스를 시작하는 명령을 입력해야합니다. "Automatic" 으로 변경하면 부팅시에 자동으로 서비스를 시작합니다.
+
+=== Linux
+
+  ssh-agent 환경 변수를 이용하면 프로세스의 실행여부를 확인할 수 있습니다. 다음 스크립트는 `ssh-agent` 프로세스가 존재하면 환경 변수를 그대로 사용합니다. 만약 그렇지 않다면 프로세스를 실행하여 환경변수를 별도에 파일로 저장하고 쉘에 적용합니다.
+
+  ```bash filename=~/.ssh-agent.sh
   #!/usr/bin/env bash
 
-  SSH_AGENT_ENV="$HOME/.ssh-agent.env
+  SSH_AGENT_ENV="$HOME/.ssh-agent.env"
 
   function start_agent { 
       echo "Initialize ssh-agent..."
-      /usr/bin/ssh-agent | sed 's/^echo/#echo/' > ${SSH_ENV} 
+      /usr/bin/ssh-agent | sed 's/^echo/#echo/' > ${SSH_AGENT_ENV} 
       chmod 600 ${SSH_AGENT_ENV} 
-      . ${SSH_ENV} > /dev/null 
+      . ${SSH_AGENT_ENV} > /dev/null 
   } 
 
   if [ -f ${SSH_AGENT_ENV} ]; then
