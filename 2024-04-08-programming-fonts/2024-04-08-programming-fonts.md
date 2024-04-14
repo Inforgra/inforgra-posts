@@ -37,11 +37,11 @@ tags:
 
 <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Mono:wght@400;500;700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200..900&family=Kode+Mono:wght@400..700&family=Nanum+Gothic+Coding&family=Noto+Sans+Mono:wght@100..900&family=Reddit+Mono:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-사용하는 글꼴에 따라 코딩 경험에서 큰 차이를 만들 수 있습니다. 좋은 글꼴은 가독성을 향상 시키고, 눈의 피로를 줄이고, 생산성을 높일 수 있습니다. 코딩 글꼴의 중요성을 살펴보고, 선택할 수 있는 멋진 코딩 글꼴들을 살펴봅니다. 
+사용하는 글꼴에 따라 코딩 경험에서 큰 차이를 만들 수 있습니다. 좋은 글꼴은 가독성을 향상 시키고, 눈의 피로를 줄이고, 생산성을 높일 수 있습니다. 코딩 글꼴의 중요성을 알아보고, 최고의 글꼴들을 살펴보겠습니다.
 
 ## 코딩 글꼴이란?
 
-개발자는 코드를 작성하는 것보다, 편집의 설정을 조정하는데 오랜 시간이 걸린다는 말이 있습니다. 기본적으로 제공하는 글꼴을 변경하는 경우가 많습니다.
+개발자는 코드를 작성하는 것보다, 편집의 설정을 조정하는데 오랜 시간이 걸린다는 말이 있습니다. 각자 선호하는 개발 환경은 다를 수 있지만, 기본적으로 제공하는 글꼴을 변경하는 경우가 많습니다.
 
 코딩 글꼴에 대한 정의는 별도로 없지만, 대부분의 개발자는 다음과 같은 글꼴을 선호합니다.
 
