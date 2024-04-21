@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: SSH 키를 생성하고, ssh-agent 에서 사용하기
 summary: SSH 프로토콜은 SSH 키를 사용합니다. 새로운 SSH 키를 생성하고, ssh-agent 에 추가하는 방법을 알아보겠습니다.
 date: 2024-04-09
