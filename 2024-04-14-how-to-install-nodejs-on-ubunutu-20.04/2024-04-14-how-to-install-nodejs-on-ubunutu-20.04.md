@@ -13,7 +13,7 @@ tags:
 
 [Node.js](https://node.js) 는 Javascript 를 브라우저 밖에서 실행할 수 있도록 하는 런타임 환경이다. Next.js, Remix, Vue 등의 프레임워크를 개발하거나 실행할 때 반드시 설치가 필요하다.
 
-우분투 환경에서 Node.js 의 설치는 apt 를 사용하여 설치할 수 있다. 이 경우 구버전(10.19)을 설치하며, 최신 버전이 필요한 경우 빌드나 서비할 때 오류가 발생한다. 최신 버전을 설치하기 위해서는 별도의 방법이 필요하다.
+우분투 환경에서 Node.js 의 설치는 apt 를 사용하여 설치할 수 있다. 이 경우 구버전(10.19)을 설치하며, 최신 버전이 필요한 경우 빌드나 서비스 할 때 오류가 발생한다. 최신 버전을 설치하기 위해서는 별도의 방법이 필요하다.
 
 ## PPA 설치 방법
 
@@ -33,13 +33,13 @@ $ sudo apt-get install -y nodejs
 $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 # download and install Node.js
-nvm install 20
+$ nvm install 20
 
 # verifies the right Node.js version is in the environment
-node -v # should print `v20.12.2`
+$ node -v # should print `v20.12.2`
 
 # verifies the right NPM version is in the environment
-npm -v # should print `10.5.0`
+$ npm -v # should print `10.5.0`
 ```
 
 ## 참고
