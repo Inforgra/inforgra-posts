@@ -21,7 +21,7 @@ tags:
 Windows 의 경우 우분투의 `apt`와 유사한 `winget` 패키지 관리자가 있습니다. `winget` 을 사용하면 보다 쉽게 설치가 가능합니다. `winget` 의 사용법은 [여기](https://inforgra.com/posts/2024-08-09-how-to-use-winget) 에서 자세히 볼 수 있습니다.
 
 ```
-winget install CoreyButler.NVMforWindows
+> winget install CoreyButler.NVMforWindows
 찾음 NVM for Windows [CoreyButler.NVMforWindows] 버전 1.1.12
 이 응용 프로그램의 라이선스는 그 소유자가 사용자에게 부여했습니다.
 Microsoft는 타사 패키지에 대한 책임을 지지 않고 라이선스를 부여하지도 않습니다.
