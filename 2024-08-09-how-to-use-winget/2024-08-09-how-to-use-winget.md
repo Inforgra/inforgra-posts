@@ -1,7 +1,7 @@
 ---
 published: true
 title: Winget 을 사용하여 프로그램 설치하기
-date: 2024-08-19 09:00:00.0+09:00
+date: 2024-08-09 09:00:00.0+09:00
 image: winget.jpg
 imageAlt: content="Searching, discovering and installing winget packages made effortless without any third-party programs
 summary: Windows 에서 패키지를 관리하는 유형들을 살펴보고, 개발자에게 유용한 `winget` 패키지 관리자를 사용하여 패키지를 관리하는 방법을 알아보겠습니다.
