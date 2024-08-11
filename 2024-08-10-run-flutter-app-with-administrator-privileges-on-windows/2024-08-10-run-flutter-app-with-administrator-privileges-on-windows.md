@@ -4,7 +4,7 @@ title: Flutter 앱을 윈도우 관리자 권한으로 실행하기
 date: 2024-08-10 09:00:00.0+09:00
 image: flutter.png
 imageAlt: Flutter transforms the entire app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.
-summary: Flutter 에서 윈도우 앱을 빌드할 때 관리자 권한으로 실행할 수 있도록 설정하는 방법을 살펴보겠습니다.
+summary: Flutter를 사용하여 Windows 앱을 빌드할 때 관리자 권한으로 실행하는 방법을 살펴봅니다.
 tags:
   - flutter
   - windows
