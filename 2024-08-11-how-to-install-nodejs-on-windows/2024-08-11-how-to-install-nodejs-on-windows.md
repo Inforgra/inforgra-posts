@@ -1,10 +1,10 @@
 ---
 published: true
-title: 윈도우에서 nodejs 설치하기
+title: Windows 에서 Node.js 설치하기
 date: 2024-08-11 09:00:00.0+09:00
 image: nodejs.png
 imageAlt: Node.js - Run JavaScript Everywhere
-summary: 윈도우에서 Winget을 사용하여 Nodejs를 설치하는 방법을 살펴보겠습니다.
+summary: Windows 에서 Node.js 를 설치하는 방법은 다양합니다. winget 명령을 사용하면 보다 쉽고 빠르게 설치할 수 있습니다.
 tags:
   - nvm
   - nodejs
