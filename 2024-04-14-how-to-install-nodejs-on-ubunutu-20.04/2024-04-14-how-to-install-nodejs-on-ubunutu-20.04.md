@@ -4,7 +4,7 @@ title: 우분투 20.04 에서 Node.js 설치하기
 date: 2024-04-14 09:00:00.0+09:00
 image: nodejs.png
 imageAlt: Node.js - Run JavaScript Everywhere
-summary: 우분투에서 apt를 사용하여 Node.js 설치시에 구 버전을 설치합니다. 최신 버전 설치를 위한 방법을 살펴 봅니다.
+summary: 우분투에서 Node.js 를 설치하는 방법은 여러 가지가 있습니다. NVM 통해 Node.js 를 설치하면 다양한 버전의 Node.js 환경을 사용할 수 있습니다.
 tags:
   - nodejs
   - ubuntu
