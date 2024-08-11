@@ -185,6 +185,12 @@ IdentityFile ~/.ssh/id_rsa-b
   ```
   
   StartupType 이 "Manual" 인 경우 시스템 부팅시 매번 서비스를 시작하는 명령을 입력해야합니다. "Automatic" 으로 변경하면 부팅시에 자동으로 서비스를 시작합니다.
+  
+  마지막으로 git 명령이 Windows 의 ssh 와 연동할 수 있도록 설정을 추가합니다.
+  
+  ```bash
+ git config --global core.sshCommand C:/Windows/System32/OpenSSH/ssh.exe
+  ```
 
 === Linux
 
