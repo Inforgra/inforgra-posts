@@ -38,7 +38,7 @@ CrystalDiskInfo Kurei Kei Edition CrystalDewWorld.CrystalDiskInfo.KureiKeiEditio
 CrystalDiskInfo Shizuku Edition   CrystalDewWorld.CrystalDiskInfo.ShizukuEdition  9.3.2  Tag: nvme    winget
 ```
 
-[https://winget.run/] 에서도 패키지를 검색할 수 있습니다.
+[https://winget.run/](https://winget.run) 에서도 패키지를 검색할 수 있습니다.
 
 ## 패키지 설치하기
 
