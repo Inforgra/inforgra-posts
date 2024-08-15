@@ -14,8 +14,8 @@ PowerShell 은 Windows 에서 제공하는 기능들을 명령으로 실행할 �
 사용자의 환경 변수를 조회하거나, 서비스를 시작하고, 특정 프로세스 중지 하는 등의 작업을 할 수 있습니다.
 또한 파이프라인을 사용하여 한번에 다양한 명령들을 순차 실행할 수 있습니다.
 
--   [Windows PowerShell 활용하기 (1)  - 기초](https://inforgra.com/posts/2024-08-01-using-windows-powershell-1)
--   Windows PowerShell 활용하기 (2)  - 파이프라인
+-   [Windows PowerShell 활용하기 (1)  - 기초](file:///e:/posts/2024-08-01-using-windows-powershell-1)
+-   [Windows PowerShell 활용하기 (2)  - 파이프라인](file:///e:/posts/2024-08-02-using-windows-powershell-2)
 -   Windows PowerShell 활용하기 (3)  - 환경변수
 -   Windows PowerShell 활용하기 (4)  - 프로세스
 -   Windows PowerShell 활용하기 (5)  - 서비스
@@ -24,10 +24,10 @@ PowerShell 은 Windows 에서 제공하는 기능들을 명령으로 실행할 �
 
 ## Get-PSDrive
 
-PowerShell 은 모든 정보를 객체로 표현합니다.
-이 객체는 여려개의 속성을 가질 수 있으며, 다른 객체들을 하위에 둘 수 있습니다.
+PowerShell 은 모든 정보를 개체로 표현합니다.
+이 개체는 여려개의 속성을 가질 수 있으며, 다른 개체들을 하위에 둘 수 있습니다.
 
-PowerShell 은 Windows 내의 다양한 리소스를 드라이브(Drive)라는 객체로 제공합니다.
+PowerShell 은 Windows 내의 다양한 리소스를 드라이브(Drive)라는 개체로 제공합니다.
 드라이브는 다음과 같은 유형들이 있습니다.
 
 -   파일 시스템에서 제공하는 정보 (ex: C:, D:)
@@ -37,7 +37,7 @@ PowerShell 은 Windows 내의 다양한 리소스를 드라이브(Drive)라는 �
 
 ### 예시: 모든 드라이브 조회하기
 
-이 예제는 PowerShell 에서 제공하는 모든 드라이브 객체를 조회합니다.
+이 예제는 PowerShell 에서 제공하는 모든 드라이브 개체를 조회합니다.
 
 ```
 > Get-PSDrive
@@ -58,12 +58,12 @@ WSMan                                  WSMan
 
 ## Get-Item
 
-각 객체의 대한 정보는 `Get-Item` 명령으로 조회할 수 있습니다.
-대부분 결과는 객체의 속성을 제공하는 `Get-ItemProperty` 와 동일합니다.
-만약 하위 객체 목록을 조회하는 경우에는 `Get-ChildItem` 과 동일한 결과를 나타냅니다.
+각 개체의 대한 정보는 `Get-Item` 명령으로 조회할 수 있습니다.
+대부분 결과는 개체의 속성을 제공하는 `Get-ItemProperty` 와 동일합니다.
+만약 하위 개체 목록을 조회하는 경우에는 `Get-ChildItem` 과 동일한 결과를 나타냅니다.
 
-조회할 경로를 지정할 때, 드라이브 객체의 경우 접미사 `:` 를 붙여 사용합니다.
-이후에 하위 경로의 객체명을 추가하여 조회할 수 있습니다.
+조회할 경로를 지정할 때, 드라이브 개체의 경우 접미사 `:` 를 붙여 사용합니다.
+이후에 하위 경로의 개체명을 추가하여 조회할 수 있습니다.
 첫번째 인자는 항상 `-Path` 이기 때문에 생략 가능합니다.
 
 
@@ -84,7 +84,7 @@ d-----      2024-00-00   오전 00:00                ps-test
 
 ### 예시: 지정한 경로의 모든 항목 가져오기
 
-이 예제는 `C:\ps-test` 내의 모든 객체를 가져옵니다. 와일드 카드 문자(`*`)는 현재 객체의 모든 내용을 나타냅니다.
+이 예제는 `C:\ps-test` 내의 모든 개체를 가져옵니다. 와일드 카드 문자(`*`)는 현재 개체의 모든 내용을 나타냅니다.
 
 ```
 > Get-Item C:\ps-test\*
@@ -101,7 +101,7 @@ Mode                 LastWriteTime         Length Name
 
 ### 예시: 조회한 결과에서 특정 속성만 가져오기
 
-이 예제는 `C:\ps-test\*` 내의 모든 객체를 가져와서, `Name` 속성만 출력합니다.
+이 예제는 `C:\ps-test\*` 내의 모든 개체를 가져와서, `Name` 속성만 출력합니다.
 
 ```
 > $(Get-Item C:\ps-test\*).Name
@@ -112,7 +112,7 @@ test.txt
 
 ### 예시: 사용자 레지스트리 가져오기
 
-이 예제는 사용자 레지스트리에서 객체를 가져옵니다.
+이 예제는 사용자 레지스트리에서 개체를 가져옵니다.
 `레지스트리 편집기` 에서 `HKEY_CURRENT_USER` 경로와 동일합니다.
 
 ```
@@ -128,7 +128,7 @@ HKEY_CURRENT_USER
 
 ### 예시: 사용자 레지스트리의 모든 항목 가져오기
 
-이 예제는 사용자 레지스트리의 모든 객체를 가져옵니다.
+이 예제는 사용자 레지스트리의 모든 개체를 가져옵니다.
 `레지스트리 편집기` 에서 `HKEY_CURRENT_USER` 의 하위 항목들과 동일합니다.
 
 ```
@@ -149,7 +149,7 @@ Console                        ColorTable00             : 789516
 
 ### 예시: 사용자 레지스트리의 특정 항목 가져오기
 
-이 예제는 사용자 레지스트리에서 `Environment` 객체를 가져옵니다.
+이 예제는 사용자 레지스트리에서 `Environment` 개체를 가져옵니다.
 
 ```
 > Get-Item HKCU:\Environment\
@@ -166,7 +166,7 @@ Environment                    ChocolateyLastPathUpdate : 133336991101727625
 
 ### 예시: Alias 조회하기
 
-이 예제는 Alias 드라이브에서 제공하는 객체를 가져옵니다.
+이 예제는 Alias 드라이브에서 제공하는 개체를 가져옵니다.
 
 ```
 > Get-Item Alias:
@@ -181,7 +181,7 @@ Alias           % -> ForEach-Object
 
 ## Set-Item
 
-객체의 값을 지정한 값으로 변경합니다.
+개체의 값을 지정한 값으로 변경합니다.
 만약 경로가 존재하지 않는 경우, 대부분 새로 생성하며 `New-Item` 과 동일합니다.
 
 
@@ -197,7 +197,7 @@ Set-Item -Path Alias:np -Value "C:\Windows\notepad.exe"
 
 ### 예시: 사용자 환경변수 변경하기
 
-이 예제는 환경변수 하위 객체(`NVM_HOME`)의 값을 지정한 값으로 변경합니다.
+이 예제는 환경변수 하위 개체(`NVM_HOME`)의 값을 지정한 값으로 변경합니다.
 
 ```
 > Set-Item ENV:NVM_HOME -Value C:\dev\nvm
@@ -259,7 +259,7 @@ d----l      2024-08-15  오전 10:04                MyLog
 
 ## Remove-Item
 
-지정한 경로의 객체를 제거합니다.
+지정한 경로의 개체를 제거합니다.
 이 명령은 `del`, `erase`, `rm`, `rm-dir` 등의 의 별칭을 가집니다.
 
 
@@ -283,7 +283,7 @@ d----l      2024-08-15  오전 10:04                MyLog
 
 ## Get-ChildItem
 
-하위 객체 항목들을 조회합니다.
+하위 개체 항목들을 조회합니다.
 
 
 ### 예시: 특정 디렉터리의 하위 항목 조회하기
@@ -304,7 +304,7 @@ d----l      0000-00-00  오전  0:00                MyLog
 ```
 
 
-### 예시: 사용자 레지스트리 하위 객체 목록 조회하기
+### 예시: 사용자 레지스트리 하위 개체 목록 조회하기
 
 이 예제는 `레지스트리 편집기` 에서 `HKEY_CURRENT_USER` 의 내용과 동일한 결과를 출력합니다.
 
@@ -323,13 +323,13 @@ Console                        ColorTable00             : 789516
 
 ## Get-ItemProperty
 
-객체의 속성을 조회합니다.
-객체 조회시 `Property` 필드로 되어 있는 경우 조회합니다.
+개체의 속성을 조회합니다.
+개체 조회시 `Property` 필드로 되어 있는 경우 조회합니다.
 
 
 ### 예시: 사용자 레지스터리의 특정 항목 조회하기
 
-이 예시는 사용자 레지스터리에서 `Environment` 객체의 속성을 조회합니다.
+이 예시는 사용자 레지스터리에서 `Environment` 개체의 속성을 조회합니다.
 
 ```
 > Get-ItemProperty HKCU:\Environment\
