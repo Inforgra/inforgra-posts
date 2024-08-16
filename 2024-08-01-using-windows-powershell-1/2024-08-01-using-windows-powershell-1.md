@@ -1,6 +1,6 @@
 ---
 published: true
-title: Windows PowerShell 활용하기 (1) - 기초
+title: Windows PowerShell 활용하기 (1) - Cmdlet
 summary: PowerShell 은 Windows 에서 제공하는 기능들을 명령으로 실행할 수 있는 강력한 도구로서 개발자에게 유용한 옵션입니다.
 date: 2024-08-01 00:00:00.0+09:00
 image: powershell.jpg
@@ -14,18 +14,25 @@ PowerShell 은 Windows 에서 제공하는 기능들을 명령으로 실행할 �
 사용자의 환경 변수를 조회하거나, 서비스를 시작하고, 특정 프로세스 중지 하는 등의 작업을 할 수 있습니다.
 또한 파이프라인을 사용하여 한번에 다양한 명령들을 순차 실행할 수 있습니다.
 
--   [Windows PowerShell 활용하기 (1)  - 기초](file:///e:/posts/2024-08-01-using-windows-powershell-1)
--   [Windows PowerShell 활용하기 (2)  - 파이프라인](file:///e:/posts/2024-08-02-using-windows-powershell-2)
--   Windows PowerShell 활용하기 (3)  - 환경변수
+-   [Windows PowerShell 활용하기 (1)  - 기초](https://inforgra.com/posts/2024-08-01-using-windows-powershell-1)
+-   [Windows PowerShell 활용하기 (2)  - 파이프라인](https://inforgra.com/posts/2024-08-02-using-windows-powershell-2)
+-   [Windows PowerShell 활용하기 (3)  - 환경변수 관리하기](https://inforgra.com/posts/2024-08-03-using-windows-powershell-3)
 -   Windows PowerShell 활용하기 (4)  - 프로세스
 -   Windows PowerShell 활용하기 (5)  - 서비스
 -   Windows PowerShell 활용하기 (6)  - 패키지
 
 
-## Get-PSDrive
+## Cmdlet 이란
 
-PowerShell 은 모든 정보를 개체로 표현합니다.
-이 개체는 여려개의 속성을 가질 수 있으며, 다른 개체들을 하위에 둘 수 있습니다.
+Cmdlet 은 Command-Lets 의 줄임말로서 PowerShell 에서 개체를 조작하기 위한 명령입니다.
+이 명령은 별도로 실행하는 파일이 아니라, 순수 PowerShell 의 명령입니다.
+
+Cmdlet 명령의 결과는 개체로 표현합니다.
+하나의 개체는 여러개의 속성을 가질 수 있으며, 다른 개체들을 하위에 둘 수 있습니다.
+파일시스템, 레지스트리 등 유형별로 제공하는 필드는 다를 수 있습니다.
+
+
+## Get-PSDrive
 
 PowerShell 은 Windows 내의 다양한 리소스를 드라이브(Drive)라는 개체로 제공합니다.
 드라이브는 다음과 같은 유형들이 있습니다.
@@ -59,8 +66,7 @@ WSMan                                  WSMan
 ## Get-Item
 
 각 개체의 대한 정보는 `Get-Item` 명령으로 조회할 수 있습니다.
-대부분 결과는 개체의 속성을 제공하는 `Get-ItemProperty` 와 동일합니다.
-만약 하위 개체 목록을 조회하는 경우에는 `Get-ChildItem` 과 동일한 결과를 나타냅니다.
+주로 개체의 정보를 출력하나 하위 개체의 목록을 출력하는 경우도 있습니다.
 
 조회할 경로를 지정할 때, 드라이브 개체의 경우 접미사 `:` 를 붙여 사용합니다.
 이후에 하위 경로의 개체명을 추가하여 조회할 수 있습니다.
@@ -69,7 +75,8 @@ WSMan                                  WSMan
 
 ### 예시: 현재 디렉터리 가져오기
 
-이 예제는 현재 디렉터리를 가져옵니다. 문자(`.`)는 현재 위치를 나타내며, `C:.` 와 동일합니다.
+이 예제는 `FileSystem` 공급자를 사용하여, 현재 디렉터리를 가져옵니다.
+문자(`.`)는 현재 위치를 나타내며, `C:.` 와 동일합니다.
 
 ```
 > Get-Item -Path .
@@ -84,7 +91,8 @@ d-----      2024-00-00   오전 00:00                ps-test
 
 ### 예시: 지정한 경로의 모든 항목 가져오기
 
-이 예제는 `C:\ps-test` 내의 모든 개체를 가져옵니다. 와일드 카드 문자(`*`)는 현재 개체의 모든 내용을 나타냅니다.
+이 예제는 `FileSystem` 공급자를 사용하여, `C:\ps-test` 내의 모든 개체를 가져옵니다.
+와일드 카드 문자(`*`)는 현재 개체의 모든 내용을 나타냅니다.
 
 ```
 > Get-Item C:\ps-test\*
@@ -101,7 +109,8 @@ Mode                 LastWriteTime         Length Name
 
 ### 예시: 조회한 결과에서 특정 속성만 가져오기
 
-이 예제는 `C:\ps-test\*` 내의 모든 개체를 가져와서, `Name` 속성만 출력합니다.
+이 예제는 `FileSystem` 공급자를 사용하여, `C:\ps-test\*` 내의 모든 개체를 가져옵니다.
+이후 Name= 속성만을 선택하여 출력합니다.
 
 ```
 > $(Get-Item C:\ps-test\*).Name
@@ -112,7 +121,7 @@ test.txt
 
 ### 예시: 사용자 레지스트리 가져오기
 
-이 예제는 사용자 레지스트리에서 개체를 가져옵니다.
+이 예제는 `Registry` 공급자를 사용하여, 사용자 레지스트리의 개체를 가져옵니다.
 `레지스트리 편집기` 에서 `HKEY_CURRENT_USER` 경로와 동일합니다.
 
 ```
@@ -128,7 +137,7 @@ HKEY_CURRENT_USER
 
 ### 예시: 사용자 레지스트리의 모든 항목 가져오기
 
-이 예제는 사용자 레지스트리의 모든 개체를 가져옵니다.
+이 예제는 `Registry` 공급자를 사용하여 사용자 레지스트리의 모든 개체를 가져옵니다.
 `레지스트리 편집기` 에서 `HKEY_CURRENT_USER` 의 하위 항목들과 동일합니다.
 
 ```
@@ -149,7 +158,7 @@ Console                        ColorTable00             : 789516
 
 ### 예시: 사용자 레지스트리의 특정 항목 가져오기
 
-이 예제는 사용자 레지스트리에서 `Environment` 개체를 가져옵니다.
+이 예제는 `Registry` 공급자를 사용하여, 사용자 레지스트리에서 환경변수 `Environment` 개체를 가져옵니다.
 
 ```
 > Get-Item HKCU:\Environment\
@@ -166,7 +175,7 @@ Environment                    ChocolateyLastPathUpdate : 133336991101727625
 
 ### 예시: Alias 조회하기
 
-이 예제는 Alias 드라이브에서 제공하는 개체를 가져옵니다.
+이 예제는 `Alias` 공급자를 사용하여, Alias 개체를 가져옵니다.
 
 ```
 > Get-Item Alias:
