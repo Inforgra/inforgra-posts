@@ -4,7 +4,7 @@ title: Git 저장소에서 특정 디렉토리만 복제하기
 summary: 여러개의 Git 프로젝트로 구분해야 할 것으로 보이지만, 하나의 Git 저장소에서 하위 디렉토리로 구분하여 사용하는 경우가 있습니다. Git 에서 체크아웃할 때 특정 디렉토리만 선택하여 가져오는 방법을 살펴봅니다.
 date: 2024-08-18 00:00:00.0+09:00
 image: git.png
-imageAlt: git
+imageAlt: git --distributed-is-the-new-centralized
 tags:
 - git
 - sparse-checkout
