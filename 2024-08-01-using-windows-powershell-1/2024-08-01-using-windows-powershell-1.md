@@ -14,7 +14,7 @@ PowerShell 은 Windows 에서 제공하는 기능들을 명령으로 실행할 �
 사용자의 환경 변수를 조회하거나, 서비스를 시작하고, 특정 프로세스 중지 하는 등의 작업을 할 수 있습니다.
 또한 파이프라인을 사용하여 한번에 다양한 명령들을 순차 실행할 수 있습니다.
 
--   [Windows PowerShell 활용하기 (1)  - 기초](https://inforgra.com/posts/2024-08-01-using-windows-powershell-1)
+-   [Windows PowerShell 활용하기 (1)  - Cmdlet](https://inforgra.com/posts/2024-08-01-using-windows-powershell-1)
 -   [Windows PowerShell 활용하기 (2)  - 파이프라인](https://inforgra.com/posts/2024-08-02-using-windows-powershell-2)
 -   [Windows PowerShell 활용하기 (3)  - 환경변수 관리하기](https://inforgra.com/posts/2024-08-03-using-windows-powershell-3)
 -   Windows PowerShell 활용하기 (4)  - 프로세스
