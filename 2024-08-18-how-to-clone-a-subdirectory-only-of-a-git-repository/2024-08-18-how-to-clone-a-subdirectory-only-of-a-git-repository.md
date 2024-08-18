@@ -12,7 +12,7 @@ tags:
 ---
 
 여러개의 Git 프로젝트로 구분해야 할 것으로 보이지만, 하나의 Git 저장소에서 하위 디렉토리로 구분하여 사용하는 경우가 있습니다.
-`remix` 프로젝트에서는 다양한 예제를 각각의 디렉토리로 구분하여 관리합니다. <sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+`remix` 프로젝트 <https://github.com/remix-run/examples> 에서는 다양한 예제를 각각의 디렉토리로 구분하여 관리합니다.
 
 관리하는 입장에서는 이런 경우 다수의 git 프로젝트로 관리하는 것보다, 하나로 쓰는 것이 편리합니다.
 사용자의 입장에서는 필요한 예시들만 가져와서 사용하는 것이 좋습니다.
@@ -70,7 +70,3 @@ $ git pull origin master
 
 -   [How do I clone a subdirectory only of a Git repository?](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository)
 
-
-## Footnotes
-
-<sup><a id="fn.1" href="#fnr.1">1</a></sup> <https://github.com/remix-run/examples>
