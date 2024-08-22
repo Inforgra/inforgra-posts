@@ -14,6 +14,9 @@ tags:
 어플리케이션을 개발하다 보면 데이터를 JSON 형식을 사용하는 경우가 자주 있습니다.
 Dart / Flutter 에서는 대략 3가지 방식으로 JSON 을 다루는 방법이 있으며, 각각 살펴보도록 하겠습니다.
 
+-   [dart:convert](https://dart.dev/libraries/dart-convert)
+-   
+
 먼저 몇 가지 용어를 정리해 보겠습니다.
 
 -   encode : 원본 데이터를 특정 형태(또는 포맷)로 변환
@@ -108,9 +111,6 @@ class Person {
 
 
 ## 참고
-
--   [dart:convert](https://dart.dev/libraries/dart-convert)
--   
 
 <https://api.flutter.dev/flutter/dart-convert/JsonDecoder-class.html>
 
