@@ -73,8 +73,7 @@ print(object['text']); // Dart
 ## json<sub>serializable</sub>
 
 JSON 처리를 위한 빌더를 제공합니다. 이 빌더는 encode, decode 하기 위한 코드를 자동으로 생성합니다.
-
-Model class 를 자료구조로 사용하며, 빌더가 알 수 있도록 `@JsonSerializable` 어노테이션을 추가합니다.
+Model class 를 자료구조로 사용하며, 빌더가 알 수 있도록 `JsonSerializable()` 어노테이션을 추가합니다.
 
 `pub` 명령을 사용하여 패키지를 추가합니다.
 
