@@ -68,6 +68,8 @@ print(object['text']); // Dart
 
 ## json<sub>serializable</sub>
 
+JSON 처리를 위한 빌더를 제공합니다.
+
 
 ## 참고
 
