@@ -21,7 +21,8 @@ Dart / Flutter 에서는 대략 3가지 방식으로 JSON 을 다루는 방법�
 -   codec  : encode / decode 셋
 
 예를 들어 JSON codec 이 있다고 가정해 보겠습니다.
-encode 는 자료구조를 json 형식으로 저장하는 역활을 합니다.
+JSON codec 은 JSON 형식을 가진 텍스트를 자료 변환하거나 역변환하는 방법을 제공합니다.
+encode 는 자료구조를 json 형식으로 저장하는 역활을 하며,
 decode 는 반대로 json 형식을 가진 텍스트를 자료구조로 변환합니다.
 
 
