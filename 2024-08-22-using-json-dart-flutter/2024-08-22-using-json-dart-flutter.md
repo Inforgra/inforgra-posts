@@ -16,9 +16,9 @@ Dart / Flutter 에서는 어떤 방법들이 있는지 살펴보겠습니다.
 
 방법들을 살펴보기 전에 몇 가지 용어들을 정리해 보겠습니다.
 
--   encode : 원본 데이터를 특정 형태로 변환
+-   encode : 원본 데이터를 특정 형태(또는 포맷)로 변환
 -   decode : 특정 형태의 데이터를 원본 데이터로 변환
--   codec  : encode / decode 방법
+-   codec  : encode / decode 를 통칭
 
 
 ## dart::convert
