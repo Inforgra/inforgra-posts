@@ -28,7 +28,7 @@ CSR (Client Side Rendering) 방식에 비해 여러 장점들이 있습니다.
 Webpack, Parcel 등의 번들링 도구 대비 매우 빠른 빌드 속도를 보입니다.
 Remix 와 와 통합되어 있어, 빌드 설정을 바꿀일이 거의 없습니다.
 
-스타일러
+HTML 
 
 
 ### 설치
