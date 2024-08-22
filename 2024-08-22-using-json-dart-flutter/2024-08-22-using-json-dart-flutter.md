@@ -18,6 +18,12 @@ Dart / Flutter 에서는 3개 정도의 라이브러리를 제공하며, 각각 
 -   [package:json<sub>serializable</sub>](https://pub.dev/packages/json_serializable)
 -   [package:built<sub>value</sub>](https://pub.dev/packages/built_value)
 
+먼저 이 글에서 자주 사용하는 용어 몇 개를 살펴보겠습니다.
+
+-   encode : 읽을 수 있는 데이터를 저장 가능한 형식으로 변환 (변환)
+-   decode : 저장 한 데이터를 읽을 수 있는 형식으로 변환 (역변환)
+-   codec  : 특정 데이터를 변환하거나 역변환하는 방법
+
 먼저 몇 가지 용어를 정리해 보겠습니다.
 
 -   encode : 원본 데이터를 특정 형태(또는 포맷)로 변환
