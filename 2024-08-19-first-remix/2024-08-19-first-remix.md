@@ -71,6 +71,7 @@ $ npm run build
 ```
 
 `dev` 명령을 사용하여, 서비스를 실행합니다.
+`remix-server` 가 기본설치 되어 있으며, `express` 서버로 변경 가능합니다.
 
 ```
 $ npm run dev
