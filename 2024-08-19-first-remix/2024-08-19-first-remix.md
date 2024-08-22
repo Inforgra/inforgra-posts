@@ -64,6 +64,12 @@ deps   Install dependencies with npm?
 
 ## 빌드 하고 실행하기
 
+`build` 명령을 사용하여, 빌드합니다.
+
+```
+$ npm run build
+```
+
 `dev` 명령을 사용하여, 서비스를 실행합니다.
 
 ```
