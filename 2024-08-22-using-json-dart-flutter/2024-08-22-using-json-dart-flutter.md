@@ -68,11 +68,9 @@ print(object['text']); // Dart
 
 ## json<sub>serializable</sub>
 
-JSON 처리를 위한 빌더를 제공합니다.
-Model class 를 자료구조로 사용하며, 빌더가 알 수 있도록 `@JsonSerializable` 어노테이션을 추가합니다.
-빌더는 Model 로 변환하기 위한 코드를 자동으로 생성합니다.
+JSON 처리를 위한 빌더를 제공합니다. 빌더는 Model 로 변환하기 위한 코드를 자동으로 생성합니다.
 
-Model class 에는 `@JsonSerializable` 어노테이션을 사용하며, `fromJson`, `toJson` 메소드를 같이 정의합니다.
+Model class 를 자료구조로 사용하며, 빌더가 알 수 있도록 `@JsonSerializable` 어노테이션을 추가합니다.
 
 ```dart
 import 'package:json_annotation/json_annotation.dart';
