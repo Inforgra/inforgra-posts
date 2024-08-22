@@ -117,10 +117,8 @@ app/
 ```
 
 
-## 페이지
-
-
 ## 참고
 
--   [Remix - Quick Start](https://remix.run/docs/en/main/start/quickstart)
+-   [Remix - Quick Start (5m)](https://remix.run/docs/en/main/start/quickstart)
+-   [Remix Tutorial (30m)](https://remix.run/docs/en/main/start/tutorial)
 
