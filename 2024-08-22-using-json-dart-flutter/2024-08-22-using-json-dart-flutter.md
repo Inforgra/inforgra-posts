@@ -69,6 +69,7 @@ print(object['text']); // Dart
 ## json<sub>serializable</sub>
 
 JSON 처리를 위한 빌더를 제공합니다.
+이 빌더는 자동으로 코드를 생성하며 `@JsonSerializable` 어노테이션을 사용합니다.
 
 
 ## 참고
