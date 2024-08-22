@@ -15,7 +15,8 @@ tags:
 Dart / Flutter 에서는 대략 3가지 방식으로 JSON 을 다루는 방법이 있으며, 각각 살펴보도록 하겠습니다.
 
 -   [dart:convert](https://dart.dev/libraries/dart-convert)
--   
+-   [package:json<sub>serializable</sub>](https://pub.dev/packages/json_serializable)
+-   [package:built<sub>value</sub>](https://pub.dev/packages/built_value)
 
 먼저 몇 가지 용어를 정리해 보겠습니다.
 
