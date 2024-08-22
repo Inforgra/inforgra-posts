@@ -66,7 +66,10 @@ print(object['text']); // Dart
 ```
 
 
-## 
+## 참고
+
+-   [dart:convert](https://dart.dev/libraries/dart-convert)
+-   
 
 <https://api.flutter.dev/flutter/dart-convert/JsonDecoder-class.html>
 
