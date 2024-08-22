@@ -72,8 +72,6 @@ JSON 처리를 위한 빌더를 제공합니다. 빌더는 자료구조로 변�
 
 Model class 를 자료구조로 사용하며, 빌더가 알 수 있도록 `@JsonSerializable` 어노테이션을 추가합니다.
 
-=
-
 ```dart
 import 'package:json_annotation/json_annotation.dart';
 
