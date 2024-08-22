@@ -1,6 +1,6 @@
 ---
 published: true
-title: Windows 작업표시줄에서 검색창 활성화 및 비 활성화 하기
+title: Windows 작업 표시줄에서 검색창 활성화 및 비 활성화 하기
 summary: Windows 작업 표시줄에서 검색창을 활성화 하거나 비활성화 하는 방법을 살펴보겠습니다.
 date: 2024-08-22 00:00:00.0+09:00
 image: step-1.png
