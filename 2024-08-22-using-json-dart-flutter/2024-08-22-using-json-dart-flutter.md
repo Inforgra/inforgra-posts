@@ -22,6 +22,8 @@ Dart / Flutter 에서는 어떤 방법들이 있는지 살펴보겠습니다.
 
 ## dart::convert
 
+`JsonDecoder`, `JsonEncoder` 클래스를 제공합니다.
+
 ```
 
 ```
