@@ -12,7 +12,7 @@ tags:
 ---
 
 어플리케이션을 개발하다 보면 데이터를 JSON 형식을 사용하는 경우가 자주 있습니다.
-Dart / Flutter 에서는 3개 정도의 라이브러리를 제공하며, 각각 장단점이 있습니다.
+Dart / Flutter 에서는 3개 정도의 라이브러리를 제공하며, 각각 살펴보도록 하겠습니다.
 
 -   [dart:convert](https://dart.dev/libraries/dart-convert)
 -   [package:json<sub>serializable</sub>](https://pub.dev/packages/json_serializable)
