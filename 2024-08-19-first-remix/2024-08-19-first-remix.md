@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Remix 시작하기
 summary: Remix는 사용자 인터페이스에 집중하고 웹 표준을 통해 작업하여 빠르고 원활하며 탄력적인 사용자 경험을 제공할 수 있는 풀 스택 웹 프레임워크입니다.
 date: 2024-08-19 00:00:00.0+09:00
