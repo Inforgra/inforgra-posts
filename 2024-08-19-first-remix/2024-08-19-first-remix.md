@@ -91,8 +91,6 @@ $ npm run dev
 
 ## 라우팅
 
-기본적으로 
-
 ```
 app/
 ├── routes/
