@@ -66,7 +66,7 @@ print(object['text']); // Dart
 ```
 
 
-## dart
+## json<sub>serializable</sub>
 
 
 ## 참고
