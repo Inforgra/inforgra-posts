@@ -105,6 +105,16 @@ class Person {
 }
 ```
 
+`*.g.dart` 파일이 없다면, 다음 명령을 실행하여 생성합니다.
+
+```bash
+dart run bulid_runner build
+```
+
+```bash
+dart pub add build_runner --dev
+```
+
 
 ### JSON
 
