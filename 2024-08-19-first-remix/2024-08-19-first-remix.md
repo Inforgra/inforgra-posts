@@ -19,8 +19,10 @@ tags:
 `Remix` 는 [React](https://ko.react.dev/) 기반의 웹 프레임 워크이며 다음과 같은 특징이 있습니다.
 
 SSR (Server Side Rendering) 방식을 사용합니다.
-서버에서 렌더링 된 HTML 을 제공하여 CSR (Client Side Rendering) 대비 더욱 빠르게 페이지 로딩을 합니다.
+CSR (Client Side Rendering) 방식에 비해 여러 장점들이 있습니다.
+서버에서 렌더링 된 HTML 을 제공하여 더욱 빠르게 페이지 로딩을 합니다.
 완전한 HTML 을 제공하기 때문에 검색 엔진 최적화 (SEO) 에 용이합니다.
+스크립트 코드를 노출하지 않아 보안을 강화합니다.
 
 
 ### 설치
