@@ -62,7 +62,7 @@ deps   Install dependencies with npm?
 ```
 
 
-## 실행하기
+## 빌드 하고 실행하기
 
 `dev` 명령을 사용하여, 서비스를 실행합니다.
 
@@ -79,7 +79,7 @@ $ npm run dev
 ![img](./remix-example.png)
 
 
-## 
+## 라우팅
 
 
 ## 참고
