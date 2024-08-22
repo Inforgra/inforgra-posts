@@ -24,7 +24,7 @@ PowerShell 의 Process Cmdlet 을 사용하면 프로세스를 관리할 수 있
 -   Windows PowerShell 활용하기 (6)  - 패키지
 
 
-# 프로세스 조회하기
+## 프로세스 조회하기
 
 `Get-Process` 명령을 사용하여 프로세스를 조회할 수 있습니다.
 
@@ -124,7 +124,7 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 ```
 
 
-# 프로세스 중지하기
+## 프로세스 중지하기
 
 `Stop-Process` 명령을 사용하여 프로세스를 중지할 수 있습니다.
 
