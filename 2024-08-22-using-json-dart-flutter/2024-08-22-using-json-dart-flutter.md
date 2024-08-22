@@ -34,7 +34,7 @@ decode 는 반대로 json 형식을 가진 텍스트를 자료구조로 변환�
 
 Dart 에서 제공하는 기본 라이브러리로 다양한 codec 이 있습니다.
 JSON 을 위한 `JsonDecoder`, `JsonEncoder` 클래스를 제공합니다.
-List, Map 자료 구조를 사용하기 때문에 쉽게 적용할 수 있습니다.
+List, Map 자료 구조를 사용하기 다루는 방법이 매우 간단합니다.
 
 
 ### JsonEncoder class
