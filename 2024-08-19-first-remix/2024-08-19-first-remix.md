@@ -32,7 +32,7 @@ Remix 와 와 통합되어 있어, 빌드 설정을 바꿀일이 거의 없습�
 미리 셋팅한 유틸리티 클래스를 사용함으로써 빠르게 스타일링 할 수 있습니다.
 
 
-### 설치
+## 설치하기
 
 `create-remix` 명령을 사용하여, 초기 프로젝트를 생성합니다.
 
@@ -62,7 +62,7 @@ deps   Install dependencies with npm?
 ```
 
 
-### 실행
+## 실행하기
 
 `dev` 명령을 사용하여, 서비스를 실행합니다.
 
@@ -74,7 +74,12 @@ $ npm run dev
   ➜  press h + enter to show help
 ```
 
+<http://localhost:5173> 에서 다음과 같은 페이지를 볼 수 있습니다.
+
 ![img](./remix-example.png)
+
+
+## 
 
 
 ## 참고
