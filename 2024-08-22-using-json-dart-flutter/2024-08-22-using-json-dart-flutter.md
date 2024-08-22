@@ -70,10 +70,31 @@ print(object['text']); // Dart
 
 JSON 처리를 위한 빌더를 제공합니다.
 Model class 를 자료구조로 사용하며, 빌더는 Model class 자료구조로 변환하기 위한 코드를 자동으로 생성합니다.
-이 빌더는 자동으로 코드를 생성하며 `@JsonSerializable` 어노테이션을 사용합니다.
+Model class 에는 `@JsonSerializable` 어노테이션을 사용합니다.
 
-```
-change
+```dart
+import 'package:json_annotation/json_annotation.dart';
+
+part 'example.g.dart';
+
+@JsonSerializable()
+class Person {
+  /// The generated code assumes these values exist in JSON.
+  final String firstName, lastName;
+
+  /// The generated code below handles if the corresponding JSON value doesn't
+  /// exist or is empty.
+  final DateTime? dateOfBirth;
+
+  Person({required this.firstName, required this.lastName, this.dateOfBirth});
+
+  /// Connect the generated [_$PersonFromJson] function to the `fromJson`
+  /// factory.
+  factory Person.fromJson(Map<String, dynamic> json) => _$PersonFromJson(json);
+
+  /// Connect the generated [_$PersonToJson] function to the `toJson` method.
+  Map<String, dynamic> toJson() => _$PersonToJson(this);
+}
 ```
 
 
