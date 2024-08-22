@@ -25,7 +25,6 @@ CSR (Client Side Rendering) 방식에 비해 여러 장점들이 있습니다.
 스크립트 코드를 노출하지 않아 보안을 강화합니다.
 
 Nested Routes 를 사용합니다.
-파일의 구조와 같은 URL 을 제공하여,
 
 기본 빌드 도구로 Vite 를 사용합니다.
 Webpack, Parcel 등의 번들링 도구 대비 매우 빠른 빌드 속도를 보입니다.
