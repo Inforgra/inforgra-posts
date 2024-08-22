@@ -84,7 +84,6 @@ $ flutter pub add json_serializable
 
 ```dart
 import 'package:json_annotation/json_annotation.dart';
-
 part 'example.g.dart';
 
 @JsonSerializable()
