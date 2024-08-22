@@ -25,6 +25,7 @@ Dart / Flutter 에서는 3개 정도의 라이브러리를 제공하며, 각각 
 -   codec  : 데이터를 변환, 역변환 하기 위한 방법
 
 예를 들어 JSON codec 이 있다고 가정해 보겠습니다.
+JSON codec 은 JSON 포맷의 텍스트로 저장 가능합니다.
 JSON codec 은 JSON 형식을 가진 텍스트를 자료 변환하거나 역변환하는 방법을 제공합니다.
 encode 는 자료구조를 json 형식으로 저장하며,
 decode 는 반대로 json 형식을 가진 텍스트를 자료구조로 변환합니다.
