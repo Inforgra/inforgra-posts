@@ -14,11 +14,9 @@ tags:
 어플리케이션을 개발하다 보면 데이터를 JSON 형식을 사용하는 경우가 자주 있습니다.
 Dart / Flutter 에서는 어떤 방법들이 있는지 살펴보겠습니다.
 
-방법들을 살펴보기 전에 몇 가지 용어들을 정리해 보겠습니다.
-
 -   encode : 원본 데이터를 특정 형태(또는 포맷)로 변환
 -   decode : 특정 형태의 데이터를 원본 데이터로 변환
--   codec  : encode / decode 를 통칭
+-   codec  : encode / decode 셋
 
 
 ## dart::convert
