@@ -18,9 +18,12 @@ Dart / Flutter 에서는 어떤 방법들이 있는지 살펴보겠습니다.
 
 -   decode : 텍스트 형식을 접근하기 편한 자료구조로 변환하는 과정
 -   encode : 자료구조를 텍스트 형식으로 변경
+-   codec  : 포맷을 변경
 
 
 ## dart::convert
+
+Dart 에서 제공하는 기본 라이브러리로 다양한
 
 `JsonDecoder`, `JsonEncoder` 클래스를 제공합니다.
 
