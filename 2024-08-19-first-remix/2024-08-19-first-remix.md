@@ -17,6 +17,7 @@ tags:
 이 때 세세한 기능까지 살펴보지는 않아도 됩니다. 필요할 때 고민해도 늦지 않습니다.
 
 `Remix` 는 [React](https://ko.react.dev/) 기반의 웹 프레임 워크입니다.
+SSR (Server Side Rendering) 방식을 
 
 
 ### 설치
