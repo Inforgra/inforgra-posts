@@ -111,6 +111,8 @@ class Person {
 dart run bulid_runner build
 ```
 
+만약 `build_runner` 가 없다면, 다음 명령을 실행하여 의존성을 추가합니다.
+
 ```bash
 dart pub add build_runner --dev
 ```
