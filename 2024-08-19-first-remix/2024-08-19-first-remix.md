@@ -103,11 +103,14 @@ app/
 └── root.tsx
 ```
 
-| URL                     | 일치하는 경로                            | 레이아웃                |
-| /about                  | app/routes/about.tsx                     | app/root.tsx            |
-| /concerts               | app/routes/concerts.<sub>index.tsx</sub> | app/routes/concerts.tsx |
-| /concerts/trending      | app/routes/concerts.trending.tsx         | app/routes/concerts.tsx |
-| /concert/salt-lake-city | app/routes/concerts.$city.tsx            | app/routes/concerts.tsx |
+```
+| URL                     | 일치하는 경로                    | 레이아웃                |
+| /                       | app/routes/_index.tsx            | app/root.tsx            |
+| /about                  | app/routes/about.tsx             | app/root.tsx            |
+| /concerts               | app/routes/concerts._index.tsx   | app/routes/concerts.tsx |
+| /concerts/trending      | app/routes/concerts.trending.tsx | app/routes/concerts.tsx |
+| /concert/salt-lake-city | app/routes/concerts.$city.tsx    | app/routes/concerts.tsx |
+```
 
 
 ## 참고
