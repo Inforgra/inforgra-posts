@@ -30,8 +30,38 @@ decode 는 반대로 json 형식을 가진 텍스트를 자료구조로 변환�
 Dart 에서 제공하는 기본 라이브러리로 다양한 codec 을 제공합니다.
 JSON 을 위한 `JsonDecoder`, `JsonEncoder` 클래스가 있으며, List, Map 자료 구조를 사용합니다.
 
+
+### JsonEncoder class
+
+```dart
+const JsonEncoder encoder = JsonEncoder();
+const data = {'text': 'foo', 'value': '2'};
+
+final String jsonString = encoder.convert(data);
+print(jsonString); // {"text":"foo","value":"2"}
 ```
 
+
+### JsonDecoder class
+
+```dart
+const JsonDecoder decoder = JsonDecoder();
+
+const String jsonString = '''
+  {
+    "data": [{"text": "foo", "value": 1 },
+             {"text": "bar", "value": 2 }],
+    "text": "Dart"
+  }
+''';
+
+final Map<String, dynamic> object = decoder.convert(jsonString);
+
+final item = object['data'][0];
+print(item['text']); // foo
+print(item['value']); // 1
+
+print(object['text']); // Dart
 ```
 
 
