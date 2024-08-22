@@ -14,15 +14,15 @@ tags:
 환경변수는 시스템이나 프로그램에서 사용하는 데이터를 저장합니다.
 PowerShell 에서 환경변수를 조회, 변경, 추가 및 삭제 등과 같이 관리하는 방법을 살펴봅니다.
 
--   [Windows PowerShell 활용하기 (1)  - 기초](https://inforgra.com/posts/2024-08-01-using-windows-powershell-1)
+-   [Windows PowerShell 활용하기 (1)  - Cmdlet](https://inforgra.com/posts/2024-08-01-using-windows-powershell-1)
 -   [Windows PowerShell 활용하기 (2)  - 파이프라인](https://inforgra.com/posts/2024-08-02-using-windows-powershell-2)
 -   [Windows PowerShell 활용하기 (3)  - 환경변수 관리하기](https://inforgra.com/posts/2024-08-03-using-windows-powershell-3)
--   Windows PowerShell 활용하기 (4)  - 프로세스
+-   [Windows PowerShell 활용하기 (4)  - 프로세스](https://inforgra.com/posts/2024-08-04-using-windows-powershell-4)
 -   Windows PowerShell 활용하기 (5)  - 서비스
 -   Windows PowerShell 활용하기 (6)  - 패키지
 
 
-## 환경 변수란?
+# 환경 변수란?
 
 환경변수는 키와 값을 문자열 형태로 저장합니다.
 시스템의 이름, 사용자명, 사용자의 홈 디렉토리 등과 같은 데이터를 환경 변수에 저장할 수 있습니다.
@@ -56,7 +56,7 @@ PowerShell 에서 환경 변수를 관리하는 방법은 세가지가 있습니
 -   시스템 제어판 사용
 
 
-## 변수 구문 사용하기
+# 변수 구문 사용하기
 
 다음 구문을 사용하여 환경 변수의 값을 조회하고, 변경합니다.
 
@@ -84,7 +84,7 @@ $Env:FOO = "An Example"
 ```
 
 
-## Cmdlet 사용하기
+# Cmdlet 사용하기
 
 경로 `-Path` 에 `Env:` 드라이버를 지정하면 환경변수의 전체 목록을 조회합니다.
 
@@ -133,7 +133,7 @@ C:\WINDOWS
 ```
 
 
-## .Net System.Environment 클래스 사용하기
+# .Net System.Environment 클래스 사용하기
 
 System.Environment 클래스는 환경변수를 조회하고, 수정하는 메소드를 제공합니다.
 
@@ -151,15 +151,15 @@ D:\Windows
 ```
 
 
-## 영구적으로 환경변수 변경하기
+# 영구적으로 환경변수 변경하기
 
 
-### Profile 을 사용하여 변경
+## Profile 을 사용하여 변경
 
 이 방법은 추후 별도의 문서에서 다룰 예정입니다.
 
 
-### SetEnvironmentVariable() 메소드를 사용하여 변경
+## SetEnvironmentVariable() 메소드를 사용하여 변경
 
 `SetEnvironmentVariable()` 메소드의 세번째 매개변수를 지정하여, 해당 범위의 환경 변수를 변경합니다.
 
@@ -171,7 +171,7 @@ D:\Windows
 ```
 
 
-### Cmdlet 을 사용하여 레지스트리 변경
+## Cmdlet 을 사용하여 레지스트리 변경
 
 각 환경변수의 범위에 해당하는 레지스트리 드라이버는 다음과 같습니다.
 
