@@ -47,7 +47,7 @@ from selenium.webdriver.common.by import By
 단 6개의 액션으로도 다양한 웹 페이지에 접근하고, 클릭하고, 저장이 가능합니다.
 
 
-### sleep
+### `sleep`
 
 웹 페이지 클릭시 로드가 되기전에 다른 작업을 하게 될 수 있습니다.
 이런 경우 충분히 쉬어 줄 수 있도록 `sleep` 함수를 정의합니다.
@@ -58,7 +58,7 @@ def sleep(sec, driver):
 ```
 
 
-### get
+### `get`
 
 브라우저 주소창에 주소를 입력합니다.
 
@@ -68,7 +68,7 @@ def get(url, driver):
 ```
 
 
-### click
+### `click`
 
 지정한 요소들을 선택하고, 주어진 텍스트를 가진 요소를 클릭합니다.
 요소를 선택하는 방법은 `css selector` 를 사용합니다.
@@ -83,7 +83,7 @@ def click(text, selector, driver):
 ```
 
 
-### click\_index
+### `click_index`
 
 지정한 요소들을 선택하고, `index` 번째 요소를 클릭합니다.
 
@@ -93,7 +93,7 @@ def click_index(index, selector, driver):
 ```
 
 
-### save\_current\_page
+### `save_current_page`
 
 현재 페이지를 저장합니다.
 
@@ -156,7 +156,7 @@ def run(functions, driver):
 ```
 
 
-### execcute
+### execute
 
 build, run 함수를 각각 실행하지 않고, 한번에 할 수 있도록 조합(compose)하였습니다.
 
