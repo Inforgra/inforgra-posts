@@ -208,7 +208,10 @@ driver = Firefox()
 execute(cmds)(driver)
 ```
 
-결과는 다음과 같습니다. 이를 실행하는 과정을 녹화해 보았습니다.
+결과는 다음과 같습니다.
+이를 실행하는 과정을 녹화해 보았습니다.
+사용하는 모니터가 5k 라서 화면이 매우 작게 나왔습니다.
+크기는 확대를 해 봤는데, 부족한 점이 있으니 양해 바랍니다.
 
 <center>
 <iframe width='560' height='315' src='https://www.youtube.com/embed/dNI_v4dmgZw?si=FipAa52cd_Tvmbw6' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>
