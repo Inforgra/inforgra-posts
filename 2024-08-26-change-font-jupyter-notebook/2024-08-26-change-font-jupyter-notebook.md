@@ -34,14 +34,11 @@ Jupyter Notebook 은 설정을 별도로 할 수 있도록 지원합니다.
 이 명령은 `$HOME/.jupyter` 에 기본 설정을 생성합니다.
 
 ```bash
-change
+jupyter-notebook --generate-config
 ```
 
-jupyter-notebook --generate-config
-
-​
-
-CSS 설정은 $HOME/.jupyter/custom/custom.css 에서 합니다. 디렉토리가 없다면 custom 생성하고, 파일을 custom.css 파일에 다음과 같이 글꼴을 설정합니다.
+CSS 설정은 `$HOME/.jupyter/custom/custom.css` 에서 합니다.
+디렉토리(또는 폴더)가 없다면 custom 생성하고, 파일을 custom.css 파일에 다음과 같이 글꼴을 설정합니다.
 
 ​
 
