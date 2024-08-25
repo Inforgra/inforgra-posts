@@ -28,6 +28,8 @@ tags:
 
 이 예제 코드에서 사용하는 패키지는 다음과 같습니다.
 코드의 구조화를 위해 `functools`, `itertools` 패키지를 사용합니다.
+이 코드를 Ubutnu 환경에서 테스트 하였기 때문에 `Firefox` 를 사용합니다.
+Windows, OSX 에서는 Edge, Chrome 사용이 가능합니다.
 
 ```python
 import functools
@@ -36,5 +38,29 @@ import time
 import traceback
 from selenium.webdriver import Firefox
 from selenium.webdriver.common.by import By
+```
+
+
+## 기초 함수
+
+
+### sleep
+
+```python
+def sleep(sec, driver):
+    time.sleep(sec)
+```
+
+```python
+def get(url, driver):
+    driver.get(url)
+```
+
+```python
+def click(text, selector, driver):
+    for x in driver.find_elements(By.CSS_SELECTOR, selector):
+        if x.text == text:
+            x.click()
+            break
 ```
 
