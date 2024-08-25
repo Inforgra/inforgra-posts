@@ -158,9 +158,12 @@ def run(functions, driver):
 
 ### execcute
 
-build, run 함수를 조합하였습니다.
+build, run 함수를 각각 실행하지 않고, 한번에 할 수 있도록 조합(compose)하였습니다.
 
 ```python
 execute = lambda cmds: functools.partial(run, build(cmds))
 ```
+
+
+## 실행 결과
 
