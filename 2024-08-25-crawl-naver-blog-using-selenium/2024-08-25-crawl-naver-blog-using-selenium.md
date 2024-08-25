@@ -234,3 +234,18 @@ execute: functools.partial(<function sleep at 0x7f0c3887a320>, 1)
 execute: functools.partial(<function save_current_page at 0x7f0c388cc820>, 'crawl-blog-naver-com/home-sec-1-page-3.html')
 ```
 
+수집이 잘 되었는지 디렉토리를 살펴봅니다.
+
+```bash
+$ ls -al crawl-blog-naver-com
+total 2024
+drwxr-xr-x 2 kjkang kjkang   4096 Aug 25 20:38 ./
+drwxr-xr-x 5 kjkang kjkang   4096 Aug 25 20:38 ../
+-rw-r--r-- 1 kjkang kjkang 342271 Aug 25 20:40 home-all-page-2.html
+-rw-r--r-- 1 kjkang kjkang 341998 Aug 25 20:40 home-all-page-3.html
+-rw-r--r-- 1 kjkang kjkang 340022 Aug 25 20:40 home-sec-1-page-1.html
+-rw-r--r-- 1 kjkang kjkang 340588 Aug 25 20:40 home-sec-1-page-2.html
+-rw-r--r-- 1 kjkang kjkang 342351 Aug 25 20:40 home-sec-1-page-3.html
+-rw-r--r-- 1 kjkang kjkang 340958 Aug 25 20:40 home-sec-all-page-1.html
+```
+
