@@ -254,11 +254,10 @@ drwxr-xr-x 5 kjkang kjkang   4096 Aug 25 20:38 ../
 -rw-r--r-- 1 kjkang kjkang 340958 Aug 25 20:40 home-sec-all-page-1.html
 ```
 
-<script src="https://gist.github.com/Inforgra/ea3809b1b44b5c68e5bece6a0e1abcbe.js"></script>
-
 
 ## 참고
 
 -   [Selenium Documentation](https://www.selenium.dev/documentation/)
 -   [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php)
+-   **[[<https://gist.github.com/Inforgra/ea3809b1b44b5c68e5bece6a0e1abcbe>][Github Gist:** 전체코드]]
 
