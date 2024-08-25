@@ -252,7 +252,6 @@ drwxr-xr-x 5 kjkang kjkang   4096 Aug 25 20:38 ../
 
 ## 참고
 
--   
-
+-   [Selenium Documentation](https://www.selenium.dev/documentation/)
 -   [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php)
 
