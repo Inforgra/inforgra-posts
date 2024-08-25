@@ -127,8 +127,12 @@ def save_current_page(filename, driver):
 ```
 
 
-## 빌드, 실행
-
-
 ### build
+
+앞에서 정의한 명령을 실행 가능한 구조로 변경합니다.
+
+```python
+def build(cmds):
+    return [ functools.partial(cmd[0], *cmd[1:]) for cmd in itertools.chain(*cmds) ]
+```
 
