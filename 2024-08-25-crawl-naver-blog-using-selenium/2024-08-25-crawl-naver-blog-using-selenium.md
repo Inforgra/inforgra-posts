@@ -23,3 +23,17 @@ tags:
 이런 경우 Selenium 을 사용하는 것이 좋은 대안이 될 수 있습니다.
 웹 브라우저를 사용하기 때문에 동적인 요소를 고민할 필요가 없습니다.
 
+
+## 사용하는 패키지
+
+=sele
+
+```python
+import functools
+import itertools
+import time
+import traceback
+from selenium.webdriver import Firefox
+from selenium.webdriver.common.by import By
+```
+
