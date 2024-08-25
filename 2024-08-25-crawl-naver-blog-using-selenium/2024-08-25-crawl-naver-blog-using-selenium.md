@@ -43,10 +43,13 @@ from selenium.webdriver.common.by import By
 
 ## 기본 함수
 
-크롤을 위해서 해야할 몇 가지 명령을 정의합니다.
+크롤을 위해서 해야할 몇 가지 명령을 정의합니다. 
 
 
 ### sleep
+
+웹 페이지 클릭시 로드가 되기전에 다른 작업을 하게 될 수 있습니다.
+이런 경우 충분히 쉬어 줄 수 있도록 `sleep` 함수를 정의합니다.
 
 ```python
 def sleep(sec, driver):
