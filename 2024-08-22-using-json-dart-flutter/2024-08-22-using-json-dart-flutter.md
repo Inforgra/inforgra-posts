@@ -15,8 +15,8 @@ tags:
 Dart / Flutter 에서는 3개 정도의 라이브러리를 제공하며, 각각 살펴보도록 하겠습니다.
 
 -   [dart:convert](https://dart.dev/libraries/dart-convert)
--   [package:json<sub>serializable</sub>](https://pub.dev/packages/json_serializable)
--   [package:built<sub>value</sub>](https://pub.dev/packages/built_value)
+-   [package:json\_serializable](https://pub.dev/packages/json_serializable)
+-   [package:built\_value](https://pub.dev/packages/built_value)
 
 먼저 이 글에서 자주 사용하는 용어 몇 개를 살펴보겠습니다.
 
@@ -70,7 +70,7 @@ print(object['text']); // Dart
 ```
 
 
-## json\\<sub>serializable</sub>
+## json\\\_serializable
 
 JSON 처리를 위한 빌더를 제공합니다. 이 빌더는 encode, decode 하기 위한 코드를 자동으로 생성합니다.
 Model class 를 자료구조로 사용하며, 빌더가 알 수 있도록 `JsonSerializable()` 어노테이션을 추가합니다.
