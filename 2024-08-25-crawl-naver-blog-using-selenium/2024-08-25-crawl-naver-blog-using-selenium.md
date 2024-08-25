@@ -46,8 +46,7 @@ from selenium.webdriver.common.by import By
 크롤을 위해 반드시 필요한 액션을 정의합니다.
 단 6개의 액션으로도 다양한 웹 페이지에 접근하고, 클릭하고, 저장이 가능합니다.
 
-
-### `sleep`
+`sleep`
 
 웹 페이지 클릭시 로드가 되기전에 다른 작업을 하게 될 수 있습니다.
 이런 경우 충분히 쉬어 줄 수 있도록 `sleep` 함수를 정의합니다.
@@ -57,8 +56,7 @@ def sleep(sec, driver):
     time.sleep(sec)
 ```
 
-
-### `get`
+`get`
 
 브라우저 주소창에 주소를 입력합니다.
 
@@ -67,8 +65,7 @@ def get(url, driver):
     driver.get(url)
 ```
 
-
-### `click`
+`click`
 
 지정한 요소들을 선택하고, 주어진 텍스트를 가진 요소를 클릭합니다.
 요소를 선택하는 방법은 `css selector` 를 사용합니다.
@@ -82,8 +79,7 @@ def click(text, selector, driver):
             break
 ```
 
-
-### `click_index`
+`click_index`
 
 지정한 요소들을 선택하고, `index` 번째 요소를 클릭합니다.
 
@@ -92,8 +88,7 @@ def click_index(index, selector, driver):
     driver.find_elements(By.CSS_SELECTOR, selector)[index].click()
 ```
 
-
-### `save_current_page`
+`save_current_page`
 
 현재 페이지를 저장합니다.
 
@@ -126,8 +121,7 @@ def save_current_page(filename, driver):
 ]
 ```
 
-
-### build
+`build`
 
 앞에서 정의한 명령을 실행 가능한 구조로 변경합니다.
 
@@ -136,8 +130,7 @@ def build(cmds):
     return [ functools.partial(cmd[0], *cmd[1:]) for cmd in itertools.chain(*cmds) ]
 ```
 
-
-### run
+`run`
 
 빌드한 명령들을 드라이버 (ex: Firefox, Edge, Chrome) 에 실행합니다.
 
