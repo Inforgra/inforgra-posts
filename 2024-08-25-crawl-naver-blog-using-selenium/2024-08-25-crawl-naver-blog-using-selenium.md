@@ -148,7 +148,7 @@ def run(functions, driver):
         if retval is None:
             return None
         try:
-            print("execute: {}".format(cmd))
+            print("execute: {}".format(f))
             f(driver)
         except Exception as e:
             print(traceback.format_exc())
@@ -166,4 +166,8 @@ execute = lambda cmds: functools.partial(run, build(cmds))
 
 
 ## 실행 결과
+
+```python
+
+```
 
