@@ -1,6 +1,6 @@
 ---
 published: true
-title: Selenium 을 사용하여 웹 페이지 수집
+title: Selenium 을 사용하여 웹 페이지 수집하기
 summary: Selenium + Python 조합을 사용하면, 40라인이 안되는 코드로 다양한 웹 페이지를 수집할 수 있습니다.
 date: 2024-08-25 00:00:00.0+09:00
 image: selenium.png
