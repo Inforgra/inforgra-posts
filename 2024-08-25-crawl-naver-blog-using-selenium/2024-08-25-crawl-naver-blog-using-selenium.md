@@ -20,11 +20,6 @@ tags:
 또한 네이버 블로그 글은 iframe 으로 감싸져 있습니다.
 이런 동적인 요소가 포함되어 있을 때, 단순한  HTTP/S 요청으로 페이지를 수집하는 것은 매우 어렵습니다.
 
-<center>
-<iframe width='560' height='315' src='https://www.youtube.com/embed/dNI_v4dmgZw?si=FipAa52cd_Tvmbw6' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>
-</center>
-<br/>
-
 이런 경우 [Selenium](https://www.selenium.dev/) 을 사용하는 것이 좋은 대안이 될 수 있습니다.
 웹 브라우저를 사용하기 때문에 동적인 요소를 고민할 필요가 없습니다.
 웹 페이지를 수집하기 위한 코드는 40라인이 되지 않을 정도로 라이브러리 구성이 잘 되어 있습니다.
@@ -213,7 +208,12 @@ driver = Firefox()
 execute(cmds)(driver)
 ```
 
-결과는 다음과 같습니다.
+결과는 다음과 같습니다. 이를 실행하는 과정을 녹화해 보았습니다.
+
+<center>
+<iframe width='560' height='315' src='https://www.youtube.com/embed/dNI_v4dmgZw?si=FipAa52cd_Tvmbw6' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>
+</center>
+<br/>
 
 ```bash
 execute: functools.partial(<function get at 0x7f0c388cf640>, 'https://blog.naver.com')
