@@ -249,3 +249,10 @@ drwxr-xr-x 5 kjkang kjkang   4096 Aug 25 20:38 ../
 -rw-r--r-- 1 kjkang kjkang 340958 Aug 25 20:40 home-sec-all-page-1.html
 ```
 
+
+## 참고
+
+-   
+
+-   [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php)
+
