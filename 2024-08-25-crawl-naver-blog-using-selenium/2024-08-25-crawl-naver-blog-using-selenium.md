@@ -59,6 +59,8 @@ def sleep(sec, driver):
 
 ### get
 
+브라우저 주소창에 주소를 입력합니다.
+
 ```python
 def get(url, driver):
     driver.get(url)
@@ -66,6 +68,8 @@ def get(url, driver):
 
 
 ### click
+
+특정 요소를 클릭합니다. 요소를 선택하는 방법은 `css selector` 를 사용합니다.
 
 ```python
 def click(text, selector, driver):
