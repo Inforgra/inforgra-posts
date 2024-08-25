@@ -34,7 +34,7 @@ Jupyter Notebook 은 설정을 별도로 할 수 있도록 지원합니다.
 이 명령은 `$HOME/.jupyter` 에 기본 설정을 생성합니다.
 
 ```bash
-jupyter-notebook --generate-config
+$ jupyter-notebook --generate-config
 ```
 
 CSS 설정은 `$HOME/.jupyter/custom/custom.css` 에서 합니다.
