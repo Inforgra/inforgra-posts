@@ -136,3 +136,20 @@ def build(cmds):
     return [ functools.partial(cmd[0], *cmd[1:]) for cmd in itertools.chain(*cmds) ]
 ```
 
+
+### run
+
+```python
+def run(functions, driver):
+    retval = driver
+    for f in functions:
+        if retval is None:
+            return None
+        try:
+            print("execute: {}".format(cmd))
+            f(driver)
+        except Exception as e:
+            print(traceback.format_exc())
+            retval = None
+```
+
