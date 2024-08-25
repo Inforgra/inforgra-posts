@@ -104,7 +104,7 @@ def save_current_page(filename, driver):
 ```
 
 
-## 빌드
+## 자료구조, 빌드 그리고 실행
 
 기본 함수를 실행하는 방법에 대해 고민이 필요합니다.
 
