@@ -139,6 +139,8 @@ def build(cmds):
 
 ### run
 
+빌드한 명령들을 드라이버 (ex: Firefox, Edge, Chrome) 에 실행합니다.
+
 ```python
 def run(functions, driver):
     retval = driver
@@ -151,5 +153,14 @@ def run(functions, driver):
         except Exception as e:
             print(traceback.format_exc())
             retval = None
+```
+
+
+### execcute
+
+build, run 함수를 조합하였습니다.
+
+```python
+execute = lambda cmds: functools.partial(run, build(cmds))
 ```
 
