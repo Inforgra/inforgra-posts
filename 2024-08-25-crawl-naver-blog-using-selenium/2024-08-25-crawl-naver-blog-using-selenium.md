@@ -259,5 +259,5 @@ drwxr-xr-x 5 kjkang kjkang   4096 Aug 25 20:38 ../
 
 -   [Selenium Documentation](https://www.selenium.dev/documentation/)
 -   [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php)
--   [Github Gist - 전체코드](https://gist.github.com/Inforgra/ea3809b1b44b5c68e5bece6a0e1abcbe)
+-   [Github Gist 전체코드](https://gist.github.com/Inforgra/ea3809b1b44b5c68e5bece6a0e1abcbe)
 
