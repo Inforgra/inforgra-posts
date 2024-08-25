@@ -43,8 +43,8 @@ from selenium.webdriver.common.by import By
 
 ## 기본 함수
 
-크롤을 위해 반드시 필요한 함수를 정의합니다.
-6개의 함수만으로도 다양한 웹 페이지에 접근하고, 클릭하고, 저장이 가능합니다.
+크롤을 위해 반드시 필요한 액션을 정의합니다.
+단 6개의 액션으로도 다양한 웹 페이지에 접근하고, 클릭하고, 저장이 가능합니다.
 
 
 ### sleep
@@ -106,35 +106,15 @@ def save_current_page(filename, driver):
 
 ## 자료구조, 빌드 그리고 실행
 
-기본 함수를 실행하는 방법에 대해 고민이 필요합니다.
+기본 함수를 정의하면, 어떤 방식으로 실행할지 고민이 필요합니다.
 
 ```python
-cmds = [
-    [
-        [get, 'https://blog.naver.com'],
-        [save_current_page, 'crawl-blog-naver-com/home-sec-all-page-1.html'],
-        [click_index, 1, '.pagination a'],
-        [sleep, 1],
-        [save_current_page, 'crawl-blog-naver-com/home-all-page-2.html'],
-        [sleep, 1],
-        [click_index, 2, '.pagination a'],
-        [sleep, 1],
-        [save_current_page, 'crawl-blog-naver-com/home-all-page-3.html'],
-        [sleep, 1],
-    ],
-    [
-        [click_index, 1, 'div[class*=navigator_category] a'],
-        [sleep, 1],
-        [save_current_page, 'crawl-blog-naver-com/home-sec-1-page-1.html'],
-        [sleep, 1],
-        [click_index, 1, '.pagination a'],
-        [sleep, 1],
-        [save_current_page, 'crawl-blog-naver-com/home-sec-1-page-2.html'],
-        [sleep, 1],
-        [click_index, 2, '.pagination a'],
-        [sleep, 1],
-        [save_current_page, 'crawl-blog-naver-com/home-sec-1-page-3.html'],
-    ]
+[
+  [get, 'https://blog.naver.com'],
+  [save_current_page, 'crawl-blog-naver-com/home-sec-all-page-1.html'],
+  [click_index, 1, '.pagination a'],
+  [sleep, 1],
+  [save_current_page, 'crawl-blog-naver-com/home-all-page-2.html'],
 ]
 ```
 
