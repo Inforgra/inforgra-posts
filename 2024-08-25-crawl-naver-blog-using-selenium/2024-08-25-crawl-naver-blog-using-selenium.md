@@ -84,6 +84,8 @@ def click(text, selector, driver):
 
 ### click<sub>index</sub>
 
+지정한 요소들을 선택하고, `index` 번째 요소를 클릭합니다.
+
 ```python
 def click_index(index, selector, driver):
     driver.find_elements(By.CSS_SELECTOR, selector)[index].click()
@@ -92,9 +94,14 @@ def click_index(index, selector, driver):
 
 ### save<sub>current</sub><sub>page</sub>
 
+현재 페이지를 저장합니다.
+
 ```python
 def save_current_page(filename, driver):
     with open(filename, 'w') as fp:
         fp.write(driver.page_source)
 ```
+
+
+## 자료 구조
 
