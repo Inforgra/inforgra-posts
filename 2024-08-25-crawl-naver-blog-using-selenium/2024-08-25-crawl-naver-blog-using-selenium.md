@@ -167,7 +167,37 @@ execute = lambda cmds: functools.partial(run, build(cmds))
 
 ## 실행 결과
 
-```python
+웹 페이지를 수집(크롤) 하기 위한 예시입니다.
+네이버 블로그 홈을 수집하고, 페이지 이동(1, 2, 3 페이지)하여 수집합니다.
+두번째 섹션을 수집하고,  페이지 이동(1, 2, 3 페이지)하여 수집합니다.
 
+```python
+cmds = [
+    [
+        [get, 'https://blog.naver.com'],
+        [save_current_page, 'crawl-blog-naver-com/home-sec-all-page-1.html'],
+        [click_index, 1, '.pagination a'],
+        [sleep, 1],
+        [save_current_page, 'crawl-blog-naver-com/home-all-page-2.html'],
+        [sleep, 1],
+        [click_index, 2, '.pagination a'],
+        [sleep, 1],
+        [save_current_page, 'crawl-blog-naver-com/home-all-page-3.html'],
+        [sleep, 1],
+    ],
+    [
+        [click_index, 1, 'div[class*=navigator_category] a'],
+        [sleep, 1],
+        [save_current_page, 'crawl-blog-naver-com/home-sec-1-page-1.html'],
+        [sleep, 1],
+        [click_index, 1, '.pagination a'],
+        [sleep, 1],
+        [save_current_page, 'crawl-blog-naver-com/home-sec-1-page-2.html'],
+        [sleep, 1],
+        [click_index, 2, '.pagination a'],
+        [sleep, 1],
+        [save_current_page, 'crawl-blog-naver-com/home-sec-1-page-3.html'],
+    ]
+]  
 ```
 
