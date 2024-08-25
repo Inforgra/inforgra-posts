@@ -106,15 +106,20 @@ def save_current_page(filename, driver):
 
 ## 자료구조, 빌드 그리고 실행
 
+이제 명령을 어떻게 구성해야 할 지 고민을 해 봐야합니다.
+
 명령은 액션들의 리스트를 가지고 있습니다.
+각 액션들은 필요한 인수를 가지고 있습니다.
 
 ```python
 [
-  [get, 'https://blog.naver.com'],
-  [save_current_page, 'crawl-blog-naver-com/home-sec-all-page-1.html'],
-  [click_index, 1, '.pagination a'],
-  [sleep, 1],
-  [save_current_page, 'crawl-blog-naver-com/home-all-page-2.html'],
+  [
+    [get, 'https://blog.naver.com'],
+    [save_current_page, 'crawl-blog-naver-com/home-sec-all-page-1.html'],
+    [click_index, 1, '.pagination a'],
+    [sleep, 1],
+    [save_current_page, 'crawl-blog-naver-com/home-all-page-2.html'],
+  ],
 ]
 ```
 
