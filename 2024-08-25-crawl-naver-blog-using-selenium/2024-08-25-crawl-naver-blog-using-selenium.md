@@ -106,3 +106,5 @@ def save_current_page(filename, driver):
 
 ## 자료 구조
 
+기본 함수를 실행하는 방법에 대해 고민이 필요합니다.
+
