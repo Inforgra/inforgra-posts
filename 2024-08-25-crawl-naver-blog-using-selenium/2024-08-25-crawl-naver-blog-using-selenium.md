@@ -201,3 +201,36 @@ cmds = [
 ]  
 ```
 
+명령을 실행합니다.
+
+```python
+driver = Firefox()
+execute(cmds)(driver)
+```
+
+결과는 다음과 같습니다.
+
+```bash
+execute: functools.partial(<function get at 0x7f0c388cf640>, 'https://blog.naver.com')
+execute: functools.partial(<function save_current_page at 0x7f0c388cc820>, 'crawl-blog-naver-com/home-sec-all-page-1.html')
+execute: functools.partial(<function click_index at 0x7f0c388cd6c0>, 1, '.pagination a')
+execute: functools.partial(<function sleep at 0x7f0c3887a320>, 1)
+execute: functools.partial(<function save_current_page at 0x7f0c388cc820>, 'crawl-blog-naver-com/home-all-page-2.html')
+execute: functools.partial(<function sleep at 0x7f0c3887a320>, 1)
+execute: functools.partial(<function click_index at 0x7f0c388cd6c0>, 2, '.pagination a')
+execute: functools.partial(<function sleep at 0x7f0c3887a320>, 1)
+execute: functools.partial(<function save_current_page at 0x7f0c388cc820>, 'crawl-blog-naver-com/home-all-page-3.html')
+execute: functools.partial(<function sleep at 0x7f0c3887a320>, 1)
+execute: functools.partial(<function click_index at 0x7f0c388cd6c0>, 1, 'div[class*=navigator_category] a')
+execute: functools.partial(<function sleep at 0x7f0c3887a320>, 1)
+execute: functools.partial(<function save_current_page at 0x7f0c388cc820>, 'crawl-blog-naver-com/home-sec-1-page-1.html')
+execute: functools.partial(<function sleep at 0x7f0c3887a320>, 1)
+execute: functools.partial(<function click_index at 0x7f0c388cd6c0>, 1, '.pagination a')
+execute: functools.partial(<function sleep at 0x7f0c3887a320>, 1)
+execute: functools.partial(<function save_current_page at 0x7f0c388cc820>, 'crawl-blog-naver-com/home-sec-1-page-2.html')
+execute: functools.partial(<function sleep at 0x7f0c3887a320>, 1)
+execute: functools.partial(<function click_index at 0x7f0c388cd6c0>, 2, '.pagination a')
+execute: functools.partial(<function sleep at 0x7f0c3887a320>, 1)
+execute: functools.partial(<function save_current_page at 0x7f0c388cc820>, 'crawl-blog-naver-com/home-sec-1-page-3.html')
+```
+
