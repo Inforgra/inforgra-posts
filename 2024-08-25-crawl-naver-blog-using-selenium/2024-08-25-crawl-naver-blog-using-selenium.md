@@ -51,10 +51,16 @@ def sleep(sec, driver):
     time.sleep(sec)
 ```
 
+
+### get
+
 ```python
 def get(url, driver):
     driver.get(url)
 ```
+
+
+### click
 
 ```python
 def click(text, selector, driver):
@@ -62,5 +68,22 @@ def click(text, selector, driver):
         if x.text == text:
             x.click()
             break
+```
+
+
+### click<sub>index</sub>
+
+```python
+def click_index(index, selector, driver):
+    driver.find_elements(By.CSS_SELECTOR, selector)[index].click()
+```
+
+
+### save<sub>current</sub><sub>page</sub>
+
+```python
+def save_current_page(filename, driver):
+    with open(filename, 'w') as fp:
+        fp.write(driver.page_source)
 ```
 
