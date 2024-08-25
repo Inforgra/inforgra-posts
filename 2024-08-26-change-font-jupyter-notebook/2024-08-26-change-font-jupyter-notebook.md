@@ -38,19 +38,15 @@ jupyter-notebook --generate-config
 ```
 
 CSS 설정은 `$HOME/.jupyter/custom/custom.css` 에서 합니다.
-디렉토리(또는 폴더)가 없다면 custom 생성하고, 파일을 custom.css 파일에 다음과 같이 글꼴을 설정합니다.
+디렉토리(또는 폴더)가 없다면 custom 디렉토리를 먼저 생성합니다.
+custom.css 파일에 다음과 같이 글꼴을 설정합니다.
 
-​
-
+​#+BEGIN<sub>SRC</sub> css
 :root {
-
---jp-content-font-family: 'NanumGothicCoding' !important;
-
---jp-code-font-family-default: 'Source Code Pro' !important;
-
+  --jp-content-font-family: 'NanumGothicCoding' !important;
+  --jp-code-font-family-default: 'Source Code Pro' !important;
 }
-
-​
+\#+END<sub>SRC</sub>
 
 같은 설정이 여러군데 있을 때 !important 사용하면, 이 값을 최우선으로 사용합니다.
 
