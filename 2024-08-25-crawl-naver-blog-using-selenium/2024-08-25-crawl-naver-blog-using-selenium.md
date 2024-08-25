@@ -41,7 +41,9 @@ from selenium.webdriver.common.by import By
 ```
 
 
-## 기초 함수
+## 기본 함수
+
+크롤을 위해서 해야할 몇 가지 명령을 정의합니다.
 
 
 ### sleep
