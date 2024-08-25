@@ -33,7 +33,7 @@ Jupyter Notebook 은 설정을 별도로 할 수 있도록 지원합니다.
 다음 명령을 입력합니다.
 이 명령은 `$HOME/.jupyter` 에 기본 설정을 생성합니다.
 
-```css
+```bash
 change
 ```
 
