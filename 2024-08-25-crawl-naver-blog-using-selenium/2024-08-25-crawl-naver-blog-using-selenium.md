@@ -20,7 +20,7 @@ tags:
 또한 네이버 블로그 글은 iframe 으로 감싸져 있습니다.
 이런 동적인 요소가 포함되어 있을 때, 단순한  HTTP/S 요청으로 페이지를 수집하는 것은 매우 어렵습니다.
 
-<iframe id="player" type="text/html" width="640" height="360" src="<https://www.youtube.com/watch?v=dNI_v4dmgZw>" frameborder="0"></iframe>
+<iframe id='player' type='text/html' width='640' height='360' src='https://www.youtube.com/watch?v=dNI\_v4dmgZw' frameborder='0'></iframe>
 
 이런 경우 [Selenium](https://www.selenium.dev/) 을 사용하는 것이 좋은 대안이 될 수 있습니다.
 웹 브라우저를 사용하기 때문에 동적인 요소를 고민할 필요가 없습니다.
