@@ -83,7 +83,7 @@ def click(text, selector, driver):
 ```
 
 
-### click<sub>index</sub>
+### click\_index
 
 지정한 요소들을 선택하고, `index` 번째 요소를 클릭합니다.
 
@@ -93,7 +93,7 @@ def click_index(index, selector, driver):
 ```
 
 
-### save<sub>current</sub><sub>page</sub>
+### save\_current\_page
 
 현재 페이지를 저장합니다.
 
