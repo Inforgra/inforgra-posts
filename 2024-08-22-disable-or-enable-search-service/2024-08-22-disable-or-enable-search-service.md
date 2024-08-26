@@ -12,5 +12,5 @@ tags:
 
 ## 참고
 
--   [Windows Search Overview](https://learn.microsoft.com/en-us/windows/win32/search/-search-3x-wds-overview)
+-   [Windows Search](https://learn.microsoft.com/en-us/windows/win32/search/windows-search)
 
