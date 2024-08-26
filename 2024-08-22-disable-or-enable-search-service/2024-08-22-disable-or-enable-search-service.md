@@ -103,4 +103,5 @@ Container           :
 ## 참고
 
 -   [Windows Search](https://learn.microsoft.com/en-us/windows/win32/search/windows-search)
+-   [Microsoft Learn - Get-Service](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/set-service?view=powershell-7.4)
 
