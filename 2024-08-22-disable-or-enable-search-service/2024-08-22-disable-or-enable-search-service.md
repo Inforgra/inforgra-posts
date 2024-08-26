@@ -93,6 +93,9 @@ Site                :
 Container           :
 ```
 
+
+### 서비스 시작유형 변경하기
+
 `Set-Service` 명령을 사용하여, `시작유형` 을 변경합니다.
 StartupType 은 다음과 같은 유형이 있습니다.
 
