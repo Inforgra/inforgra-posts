@@ -29,6 +29,12 @@ Windows Search 는 사용자 PC 내에 존재하는 이메일, 연락처, 일정
 
 ### Windows Search 서비스 비활성화 하기
 
+`Windows Search` 항목을 더블 클릭하여, 속성창을 실행합니다.
+
+![img](./step-3.png)
+
+`시작유형(E):` 을 `사용 안 함` 으로 변경하고, 확인 버튼을 클릭합니다.
+
 
 ### Windows Search 서비스 활성화 하기
 
