@@ -113,7 +113,7 @@ StartupType 은 다음과 같은 유형이 있습니다.
 
 Name     Status
 ----     ------
-WSearch Running
+WSearch  Running
 ```
 
 `Stop-Service` 명령을 사용하여, 서비스를 중지합니다.
