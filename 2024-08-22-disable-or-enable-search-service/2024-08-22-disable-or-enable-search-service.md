@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Windows Search 서비스 시작 및 중지 하기
 summary: Windows Search 서비스에 대해 알아보고, 시작, 중지 방법을 살펴봅니다.
 date: 2024-08-22 00:00:00.0+09:00
