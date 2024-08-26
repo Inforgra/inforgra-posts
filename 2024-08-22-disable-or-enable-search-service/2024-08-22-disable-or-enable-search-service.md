@@ -13,6 +13,20 @@ tags:
 Windows Search 는 사용자 PC 내에 존재하는 이메일, 연락처, 일정, 문서, 사진 등의 데이터 검색을 위한 검색 엔진입니다.
 
 
+## Windows Search
+
+```bash
+> Get-Process | Where-Object {$_.ProcessName -like "*Search*"}
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    169       9     1696       9320       0.02  25280   0 SearchFilterHost
+   1389      93   178472     110692       4.97  15784   1 SearchHost
+    714      18    11220      21020       1.73  19980   0 SearchIndexer
+    417      14     3752      18464       1.31  18912   0 SearchProtocolHost
+```
+
+
 ## Windows 서비스를 사용하여 관리하기
 
 
