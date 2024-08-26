@@ -1,7 +1,7 @@
 ---
 published: false
-title: Windows 검색 서비스 시작 및 중지 하기
-summary: 
+title: Windows Search 서비스 시작 및 중지 하기
+summary: Windows Search 서비스에 대해 알아보고, 시작, 중지 방법을 살펴봅니다.
 date: 2024-08-22 00:00:00.0+09:00
 image: windows11.png
 imageAlt: windows 11 logo
@@ -11,8 +11,8 @@ tags:
 ---
 
 Windows Search 는 사용자 PC 내에 존재하는 이메일, 연락처, 일정, 문서, 사진 등의 데이터 검색을 위한 검색 엔진입니다.
-PC 내 검색을 자주 사용할 때는 매우 편리한 서비스입니다.
-다만 색인시에 CPU, MEMORY 를 사용하기 때문에 검색을 사용하지 않는다면 중지하는 것이 좋습니다.
+PC 내의 문서를 찾고, 색인할 경우에 CPU, MEMORY 를 많이 사용합니다.
+검색을 사용하지 않는다면 서비스를 꺼 두는 것이 좋습니다.
 
 
 ## Windows Search
