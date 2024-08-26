@@ -15,10 +15,22 @@ Windows Search 는 사용자 PC 내에 존재하는 이메일, 연락처, 일정
 
 ## Windows 서비스를 사용하여 관리하기
 
+
+### 서비스 관리자 실행하기
+
 `Window` 키를 눌러 `sevice` 를 입력합니다.
-그리고 `서비스` 를 실행합니다.
 
 ![img](./step-1.png)
+
+`서비스` 를 실행합니다.
+
+![img](./step-2.png)
+
+
+### Windows Search 서비스 비활성화 하기
+
+
+### Windows Search 서비스 활성화 하기
 
 
 ## PowerShell 을 사용하여 관리하기
