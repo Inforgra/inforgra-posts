@@ -64,6 +64,16 @@ Status   Name               DisplayName
 Stopped  WSearch            Windows Search
 ```
 
+=
+
+```bash
+> Get-Service -Name "Windows Search"
+
+Status   Name               DisplayName
+------   ----               -----------
+Stopped  WSearch            Windows Search
+```
+
 `Set-Service` 명령을 사용하여, `시작유형` 을 변경합니다.
 
 
