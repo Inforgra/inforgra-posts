@@ -54,6 +54,16 @@ PC 를 재시작하는 경우에는 이와 관계 없이 `시작 유형` 에서 
 
 ### 서비스 상태 확인 하기
 
+`Get-Service` 명령을 사용하여, 서비스 상태를 확인합니다.
+
+```bash
+> Get-Service -Name "Windows Search"
+
+Status   Name               DisplayName
+------   ----               -----------
+Stopped  WSearch            Windows Search
+```
+
 
 ## 참고
 
