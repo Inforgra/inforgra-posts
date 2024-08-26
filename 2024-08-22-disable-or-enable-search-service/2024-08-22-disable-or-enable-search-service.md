@@ -68,7 +68,9 @@ Stopped  WSearch            Windows Search
 ```
 
 `Select-Object` 명령을 파이프라인으로 사용하면, 자세한 내용을 볼 수 있습니다.
-`시작유형` 은 `StartupType` 을 사용합니다.
+
+서비스의 이름(Name)은 `WSearch` 이며,
+시작유형(StartupType)은 `Automatic` 인 것을 확인 할 수 있습니다.
 
 ```bash
 > Get-Service -Name "Windows Search" | Select-Object *
