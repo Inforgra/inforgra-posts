@@ -3,10 +3,10 @@ published: false
 title: Windows 검색 서비스 시작 및 중지 하기
 summary: 
 date: 2024-08-22 00:00:00.0+09:00
-image: none.png
-imageAlt: 
+image: windows11.png
+imageAlt: windows 11 logo
 tags:
-- 
+- windows
 ---
 
 Windows Search 는 사용자 PC 내에 존재하는 이메일, 연락처, 일정, 문서, 사진 등의 데이터 검색을 위한 검색 엔진입니다.
