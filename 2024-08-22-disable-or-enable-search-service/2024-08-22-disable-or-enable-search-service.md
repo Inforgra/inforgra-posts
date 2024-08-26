@@ -96,10 +96,10 @@ Container           :
 `Set-Service` 명령을 사용하여, `시작유형` 을 변경합니다.
 StartupType 은 다음과 같은 유형이 있습니다.
 
--   Automatic:
--   AutomaticDelayedStart:
--   Disabled: 서비스를 사용할 수 없습니다.
--   Manual: 사용자가 수동으로 서비스를 시작합니다.
+-   Automatic: 부팅 직후 시작하거나 Windows 에서 필요에 따라 시작합니다
+-   AutomaticDelayedStart: 시스템 부팅 직후 시작합니다
+-   Disabled: 서비스를 사용할 수 없습니다
+-   Manual: 사용자가 수동으로 서비스를 시작합니다
 
 ```
 
