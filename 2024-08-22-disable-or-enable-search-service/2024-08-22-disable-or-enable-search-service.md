@@ -15,13 +15,14 @@ Windows Search 는 사용자 PC 내에 존재하는 이메일, 연락처, 일정
 
 ## Windows Search
 
+Windows Search 에서 생성하는 프로세스는 `SearchFilterHost`, `SearchIndexer`, `SearchProtocolHost` 입니다.
+
 ```bash
 > Get-Process | Where-Object {$_.ProcessName -like "*Search*"}
 
 Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 -------  ------    -----      -----     ------     --  -- -----------
     169       9     1696       9320       0.02  25280   0 SearchFilterHost
-   1389      93   178472     110692       4.97  15784   1 SearchHost
     714      18    11220      21020       1.73  19980   0 SearchIndexer
     417      14     3752      18464       1.31  18912   0 SearchProtocolHost
 ```
