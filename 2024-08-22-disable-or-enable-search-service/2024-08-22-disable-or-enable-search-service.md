@@ -15,6 +15,11 @@ Windows Search 는 사용자 PC 내에 존재하는 이메일, 연락처, 일정
 
 ## Windows 서비스를 사용하여 관리하기
 
+`Window` 키를 눌러 `sevice` 를 입력합니다.
+그리고 `서비스` 를 실행합니다.
+
+![img](./step-1.png)
+
 
 ## PowerShell 을 사용하여 관리하기
 
