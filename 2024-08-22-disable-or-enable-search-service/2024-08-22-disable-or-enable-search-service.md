@@ -101,9 +101,11 @@ StartupType 은 다음과 같은 유형이 있습니다.
 -   Disabled: 서비스를 사용할 수 없습니다
 -   Manual: 사용자가 수동으로 서비스를 시작합니다
 
+```bash
+> Set-Service -Name WSearch -StartupType Automatic
 ```
 
-```
+`Start-Service` 명령을 사용하여, 서비스를 시작합니다.
 
 
 ## 참고
