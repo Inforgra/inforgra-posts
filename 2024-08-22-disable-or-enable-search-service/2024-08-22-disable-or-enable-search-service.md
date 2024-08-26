@@ -108,6 +108,9 @@ StartupType 은 다음과 같은 유형이 있습니다.
 > Set-Service -Name WSearch -StartupType Automatic
 ```
 
+
+### 서비스 시작하기
+
 `Start-Service` 명령을 사용하여, 서비스를 시작합니다.
 
 ```bash
@@ -118,6 +121,9 @@ Name     Status
 ----     ------
 WSearch  Running
 ```
+
+
+### 서비스 중지하기
 
 `Stop-Service` 명령을 사용하여, 서비스를 중지합니다.
 
