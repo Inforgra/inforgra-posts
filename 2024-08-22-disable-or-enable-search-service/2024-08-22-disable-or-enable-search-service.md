@@ -64,7 +64,28 @@ Status   Name               DisplayName
 Stopped  WSearch            Windows Search
 ```
 
-=
+`Select-Object` 명령을 파이프라인으로 사용하면, 자세한 내용을 볼 수 있습니다.
+
+```bash
+> Get-Service -Name "Windows Search" | Select-Object *
+
+Name                : WSearch
+RequiredServices    : {BrokerInfrastructure, RPCSS}
+CanPauseAndContinue : False
+CanShutdown         : False
+CanStop             : False
+DisplayName         : Windows Search
+DependentServices   : {workfolderssvc, WMPNetworkSvc}
+MachineName         : .
+ServiceName         : WSearch
+ServicesDependedOn  : {BrokerInfrastructure, RPCSS}
+ServiceHandle       :
+Status              : Stopped
+ServiceType         : Win32OwnProcess
+StartType           : Automatic
+Site                :
+Container           :
+```
 
 ```bash
 > Get-Service -Name "Windows Search"
