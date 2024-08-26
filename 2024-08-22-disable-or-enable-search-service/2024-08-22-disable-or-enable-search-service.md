@@ -12,6 +12,12 @@ tags:
 Windows Search 는 사용자 PC 내에 존재하는 이메일, 연락처, 일정, 문서, 사진 등의 데이터 검색을 위한 검색 엔진입니다.
 
 
+## Windows 서비스를 사용하여 관리하기
+
+
+## PowerShell 을 사용하여 관리하기
+
+
 ## 참고
 
 -   [Windows Search](https://learn.microsoft.com/en-us/windows/win32/search/windows-search)
