@@ -107,6 +107,26 @@ StartupType 은 다음과 같은 유형이 있습니다.
 
 `Start-Service` 명령을 사용하여, 서비스를 시작합니다.
 
+```bash
+> Start-Service -Name "WSearch"
+> Get-Service -Name WSearch | Select-Object Name,Status
+
+Name     Status
+----     ------
+WSearch Running
+```
+
+`Stop-Service` 명령을 사용하여, 서비스를 중지합니다.
+
+```bash
+> Stop-Service -Name "WSearch"
+> Get-Service -Name WSearch | Select-Object Name,Status
+
+Name     Status
+----     ------
+WSearch  Stopped
+```
+
 
 ## 참고
 
