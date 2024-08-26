@@ -52,6 +52,9 @@ PC 를 재시작하는 경우에는 이와 관계 없이 `시작 유형` 에서 
 ## PowerShell 을 사용하여 관리하기
 
 
+### 서비스 상태 확인 하기
+
+
 ## 참고
 
 -   [Windows Search](https://learn.microsoft.com/en-us/windows/win32/search/windows-search)
