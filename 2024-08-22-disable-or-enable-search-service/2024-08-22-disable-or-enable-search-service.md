@@ -97,9 +97,9 @@ Container           :
 StartupType 은 다음과 같은 유형이 있습니다.
 
 -   Automatic:
--   AutomaticDelayedStart
--   Disabled
--   Manual
+-   AutomaticDelayedStart:
+-   Disabled: 서비스를 사용할 수 없습니다.
+-   Manual: 사용자가 수동으로 서비스를 시작합니다.
 
 ```
 
